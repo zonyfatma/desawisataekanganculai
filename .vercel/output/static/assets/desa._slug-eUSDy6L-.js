@@ -1,2 +1,1539 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/MapCanvas-Y1BSyf32.js","assets/jsx-runtime-D1ym7qjA.js","assets/link-C7I64epB.js","assets/jadesta-DqHZHQ8d.js","assets/chevron-down-DwehrFbR.js","assets/chevron-up-Bk1kuIOl.js","assets/navigation-B8_I2oKE.js","assets/search-DVU4GdGK.js","assets/share-2-q7_uIP0E.js","assets/index-C7uF6Peh.js","assets/cms-store-CRB3p42d.js","assets/utils-Ctb90B5i.js","assets/MapCanvas-vh-t_kPv.css"])))=>i.map(i=>d[i]);
-import{i as e,l as t,t as n}from"./jsx-runtime-D1ym7qjA.js";import{O as r,k as i,n as a}from"./cms-store-CRB3p42d.js";import{t as o}from"./link-C7I64epB.js";import{_ as s,d as c,f as l,g as u,h as d,m as f,o as p,t as m,v as h,y as g}from"./utils-Ctb90B5i.js";import{D as _,p as v}from"./jadesta-DqHZHQ8d.js";import{n as y,r as b,t as x}from"./car-Dq01rhxA.js";import{t as S}from"./share-2-q7_uIP0E.js";import{A as C,C as w,E as T,I as E,N as D,P as O,T as ee,_ as k,a as te,b as ne,c as A,g as re,h as ie,i as ae,j as oe,k as se,m as ce,p as le,r as ue,t as de,u as fe,v as pe,z as me}from"./index-C7uF6Peh.js";import{n as he,t as j}from"./dist-Cn-7foiA.js";var ge=_(`bookmark`,[[`path`,{d:`M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z`,key:`oz39mx`}]]),_e=_(`building`,[[`path`,{d:`M12 10h.01`,key:`1nrarc`}],[`path`,{d:`M12 14h.01`,key:`1etili`}],[`path`,{d:`M12 6h.01`,key:`1vi96p`}],[`path`,{d:`M16 10h.01`,key:`1m94wz`}],[`path`,{d:`M16 14h.01`,key:`1gbofw`}],[`path`,{d:`M16 6h.01`,key:`1x0f13`}],[`path`,{d:`M8 10h.01`,key:`19clt8`}],[`path`,{d:`M8 14h.01`,key:`6423bh`}],[`path`,{d:`M8 6h.01`,key:`1dz90k`}],[`path`,{d:`M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3`,key:`cabbwy`}],[`rect`,{x:`4`,y:`2`,width:`16`,height:`20`,rx:`2`,key:`1uxh74`}]]),M=_(`globe`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20`,key:`13o1zl`}],[`path`,{d:`M2 12h20`,key:`9i4pu4`}]]),ve=_(`handshake`,[[`path`,{d:`m11 17 2 2a1 1 0 1 0 3-3`,key:`efffak`}],[`path`,{d:`m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4`,key:`9pr0kb`}],[`path`,{d:`m21 3 1 11h-2`,key:`1tisrp`}],[`path`,{d:`M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3`,key:`1uvwmv`}],[`path`,{d:`M3 4h8`,key:`1ep09j`}]]),ye=_(`heart`,[[`path`,{d:`M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5`,key:`mvr1a0`}]]),be=_(`maximize-2`,[[`path`,{d:`M15 3h6v6`,key:`1q9fwt`}],[`path`,{d:`m21 3-7 7`,key:`1l2asr`}],[`path`,{d:`m3 21 7-7`,key:`tjx5ai`}],[`path`,{d:`M9 21H3v-6`,key:`wtvkvv`}]]),xe=_(`toilet`,[[`path`,{d:`M7 12h13a1 1 0 0 1 1 1 5 5 0 0 1-5 5h-.598a.5.5 0 0 0-.424.765l1.544 2.47a.5.5 0 0 1-.424.765H5.402a.5.5 0 0 1-.424-.765L7 18`,key:`kc4kqr`}],[`path`,{d:`M8 18a5 5 0 0 1-5-5V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8`,key:`1tqs57`}]]),Se=_(`wifi`,[[`path`,{d:`M12 20h.01`,key:`zekei9`}],[`path`,{d:`M2 8.82a15 15 0 0 1 20 0`,key:`dnpr2z`}],[`path`,{d:`M5 12.859a10 10 0 0 1 14 0`,key:`1x1e6c`}],[`path`,{d:`M8.5 16.429a5 5 0 0 1 7 0`,key:`1bycff`}]]),N=t(e(),1),Ce=Object.defineProperty,P=(e,t)=>Ce(e,`name`,{value:t,configurable:!0}),F=!1;function I(){let[e,t]=N.useState(F);return N.useEffect(()=>{F||(F=!0,t(!0))},[]),e}P(I,`useIsHydrated`);var L=N.useSyncExternalStore;function R(){return()=>{}}P(R,`subscribe`);function z(){return L(R,()=>!0,()=>!1)}P(z,`useIsHydratedModern`);var we=typeof L==`function`?z:I,B=n(),Te=Object.defineProperty,V=(e,t)=>Te(e,`name`,{value:t,configurable:!0}),H=`rovingFocusGroup.onEntryFocus`,Ee={bubbles:!1,cancelable:!0},U=`RovingFocusGroup`,[W,G,De]=he(U),[Oe,ke]=s(U,[De]),[Ae,je]=Oe(U),Me=N.forwardRef(V(function(e,t){return(0,B.jsx)(W.Provider,{scope:e.__scopeRovingFocusGroup,children:(0,B.jsx)(W.Slot,{scope:e.__scopeRovingFocusGroup,children:(0,B.jsx)(Ne,{...e,ref:t})})})},`RovingFocusGroup`)),Ne=N.forwardRef(V(function(e,t){let{__scopeRovingFocusGroup:n,orientation:r,loop:i=!1,dir:a,currentTabStopId:o,defaultCurrentTabStopId:s,onCurrentTabStopIdChange:u,onEntryFocus:d,preventScrollOnEntryFocus:p=!1,...m}=e,_=N.useRef(null),v=h(t,_),y=j(a),[b,x]=f({prop:o,defaultProp:s??null,onChange:u,caller:U}),[S,C]=N.useState(!1),w=c(d),T=G(n),E=N.useRef(!1),[D,O]=N.useState(0);return N.useEffect(()=>{let e=_.current;if(e)return e.addEventListener(H,w),()=>e.removeEventListener(H,w)},[w]),(0,B.jsx)(Ae,{scope:n,orientation:r,dir:y,loop:i,currentTabStopId:b,onItemFocus:N.useCallback(e=>x(e),[x]),onItemShiftTab:N.useCallback(()=>C(!0),[]),onFocusableItemAdd:N.useCallback(()=>O(e=>e+1),[]),onFocusableItemRemove:N.useCallback(()=>O(e=>e-1),[]),children:(0,B.jsx)(l.div,{tabIndex:S||D===0?-1:0,"data-orientation":r,...m,ref:v,style:{outline:`none`,...e.style},onMouseDown:g(e.onMouseDown,()=>{E.current=!0}),onFocus:g(e.onFocus,e=>{let t=!E.current;if(e.target===e.currentTarget&&t&&!S){let t=new CustomEvent(H,Ee);if(e.currentTarget.dispatchEvent(t),!t.defaultPrevented){let e=T().filter(e=>e.focusable);K([e.find(e=>e.active),e.find(e=>e.id===b),...e].filter(Boolean).map(e=>e.ref.current),p)}}E.current=!1}),onBlur:g(e.onBlur,()=>C(!1))})})},`RovingFocusGroupImpl`)),Pe=`RovingFocusGroupItem`,Fe=N.forwardRef(V(function(e,t){let{__scopeRovingFocusGroup:n,focusable:r=!0,active:i=!1,tabStopId:a,children:o,...s}=e,c=d(),f=a||c,p=je(Pe,n),m=p.currentTabStopId===f,h=G(n),{onFocusableItemAdd:_,onFocusableItemRemove:v,currentTabStopId:y}=p,b=we();return u(()=>{if(!(!b||!r))return _(),()=>v()},[b,r,_,v]),N.useEffect(()=>{if(!(b||!r))return _(),()=>v()},[b,r,_,v]),(0,B.jsx)(W.ItemSlot,{scope:n,id:f,focusable:r,active:i,children:(0,B.jsx)(l.span,{tabIndex:m?0:-1,"data-orientation":p.orientation,...s,ref:t,onMouseDown:g(e.onMouseDown,e=>{r?p.onItemFocus(f):e.preventDefault()}),onFocus:g(e.onFocus,()=>p.onItemFocus(f)),onKeyDown:g(e.onKeyDown,e=>{if(e.key===`Tab`&&e.shiftKey){p.onItemShiftTab();return}if(e.target!==e.currentTarget)return;let t=Re(e,p.orientation,p.dir);if(t!==void 0){if(e.metaKey||e.ctrlKey||e.altKey||e.shiftKey)return;e.preventDefault();let n=h().filter(e=>e.focusable).map(e=>e.ref.current);if(t===`last`)n.reverse();else if(t===`prev`||t===`next`){t===`prev`&&n.reverse();let r=n.indexOf(e.currentTarget);n=p.loop?ze(n,r+1):n.slice(r+1)}setTimeout(()=>K(n))}}),children:typeof o==`function`?o({isCurrentTabStop:m,hasTabStop:y!=null}):o})})},`RovingFocusGroupItem`)),Ie={ArrowLeft:`prev`,ArrowUp:`prev`,ArrowRight:`next`,ArrowDown:`next`,PageUp:`first`,Home:`first`,PageDown:`last`,End:`last`};function Le(e,t){return t===`rtl`?e===`ArrowLeft`?`ArrowRight`:e===`ArrowRight`?`ArrowLeft`:e:e}V(Le,`getDirectionAwareKey`);function Re(e,t,n){let r=Le(e.key,n);if(!(t===`vertical`&&[`ArrowLeft`,`ArrowRight`].includes(r))&&!(t===`horizontal`&&[`ArrowUp`,`ArrowDown`].includes(r)))return Ie[r]}V(Re,`getFocusIntent`);function K(e,t=!1){let n=document.activeElement;for(let r of e)if(r===n||(r.focus({preventScroll:t}),document.activeElement!==n))return}V(K,`focusFirst`);function ze(e,t){return e.map((n,r)=>e[(t+r)%e.length])}V(ze,`wrapArray`);var Be=Me,Ve=Fe,He=Object.defineProperty,q=(e,t)=>He(e,`name`,{value:t,configurable:!0}),J=`Tabs`,[Ue,We]=s(J,[ke]),Ge=ke(),[Ke,Y]=Ue(J),qe=N.forwardRef(q(function(e,t){let{__scopeTabs:n,value:r,onValueChange:i,defaultValue:a,orientation:o=`horizontal`,dir:s,activationMode:c=`automatic`,...u}=e,p=j(s),[m,h]=f({prop:r,onChange:i,defaultProp:a??``,caller:J});return(0,B.jsx)(Ke,{scope:n,baseId:d(),value:m,onValueChange:h,orientation:o,dir:p,activationMode:c,children:(0,B.jsx)(l.div,{dir:p,"data-orientation":o,...u,ref:t})})},`Tabs`)),Je=`TabsList`,Ye=N.forwardRef(q(function(e,t){let{__scopeTabs:n,loop:r=!0,...i}=e,a=Y(Je,n),o=Ge(n);return(0,B.jsx)(Be,{asChild:!0,...o,orientation:a.orientation,dir:a.dir,loop:r,children:(0,B.jsx)(l.div,{role:`tablist`,"aria-orientation":a.orientation,...i,ref:t})})},`TabsList`)),Xe=`TabsTrigger`,Ze=N.forwardRef(q(function(e,t){let{__scopeTabs:n,value:r,disabled:i=!1,...a}=e,o=Y(Xe,n),s=Ge(n),c=X(o.baseId,r),u=Z(o.baseId,r),d=r===o.value;return(0,B.jsx)(Ve,{asChild:!0,...s,focusable:!i,active:d,children:(0,B.jsx)(l.button,{type:`button`,role:`tab`,"aria-selected":d,"aria-controls":u,"data-state":d?`active`:`inactive`,"data-disabled":i?``:void 0,disabled:i,id:c,...a,ref:t,onMouseDown:g(e.onMouseDown,e=>{!i&&e.button===0&&e.ctrlKey===!1?o.onValueChange(r):e.preventDefault()}),onKeyDown:g(e.onKeyDown,e=>{i||e.target!==e.currentTarget||[` `,`Enter`].includes(e.key)&&o.onValueChange(r)}),onFocus:g(e.onFocus,()=>{let e=o.activationMode!==`manual`;!d&&!i&&e&&o.onValueChange(r)})})})},`TabsTrigger`)),Qe=`TabsContent`,$e=N.forwardRef(q(function(e,t){let{__scopeTabs:n,value:r,forceMount:i,children:a,...o}=e,s=Y(Qe,n),c=X(s.baseId,r),u=Z(s.baseId,r),d=r===s.value,f=N.useRef(d);return N.useEffect(()=>{let e=requestAnimationFrame(()=>f.current=!1);return()=>cancelAnimationFrame(e)},[]),(0,B.jsx)(p,{present:i||d,children:({present:n})=>(0,B.jsx)(l.div,{"data-state":d?`active`:`inactive`,"data-orientation":s.orientation,role:`tabpanel`,"aria-labelledby":c,hidden:!n,id:u,tabIndex:0,...o,ref:t,style:{...e.style,animationDuration:f.current?`0s`:void 0},children:n&&a})})},`TabsContent`));function X(e,t){return`${e}-trigger-${t}`}q(X,`makeTriggerId`);function Z(e,t){return`${e}-content-${t}`}q(Z,`makeContentId`);var et=qe,tt=Ye,nt=Ze,rt=$e,it=et,at=N.forwardRef(({className:e,...t},n)=>(0,B.jsx)(tt,{ref:n,className:m(`inline-flex h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground`,e),...t}));at.displayName=tt.displayName;var Q=N.forwardRef(({className:e,...t},n)=>(0,B.jsx)(nt,{ref:n,className:m(`inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow`,e),...t}));Q.displayName=nt.displayName;var $=N.forwardRef(({className:e,...t},n)=>(0,B.jsx)(rt,{ref:n,className:m(`mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2`,e),...t}));$.displayName=rt.displayName;var ot=(0,N.lazy)(()=>fe(()=>import(`./MapCanvas-Y1BSyf32.js`),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12]))),st={Homestay:T,Kuliner:C,Souvenir:pe,"Toilet Umum":xe,"Area Parkir":x,Internet:Se,"Pemandu Lokal Berlisensi":ce};function ct(){let{village:e}=de.useLoaderData(),t=a(),n=v[e.klasifikasi],[s,c]=(0,N.useState)(0),[l,u]=(0,N.useState)(null),[d,f]=(0,N.useState)(!1),[p,m]=(0,N.useState)(`Semua`);(0,N.useEffect)(()=>c(0),[e.slug]);let h=te({id:e.slug,nama:e.nama,deskripsi:e.deskripsi,image:e.image,kategori:e.kategori??`Wisata Alam`}),g=ae([{name:`Beranda`,url:`/`},{name:`Destinasi Desa`,url:`/desa/ekang-anculai`},{name:e.nama,url:`/desa/${e.slug}`}]),_=async()=>{let t=typeof window<`u`?window.location.href:``;try{navigator.share?await navigator.share({title:e.nama,url:t}):(await navigator.clipboard.writeText(t),le.success(`Tautan profil desa disalin`))}catch{}};return(0,B.jsxs)(`div`,{className:`bg-surface pb-20 pt-20`,children:[(0,B.jsx)(ue,{data:[h,g]}),(0,B.jsxs)(`section`,{className:`relative h-[60vh] min-h-[420px] w-full overflow-hidden`,children:[(0,B.jsx)(`img`,{src:e.galeri[s]??e.image,alt:`Galeri ${e.nama}`,width:1600,height:1e3,loading:`eager`,fetchPriority:`high`,decoding:`sync`,className:`size-full object-cover`}),(0,B.jsx)(`div`,{className:`hero-overlay absolute inset-0`}),(0,B.jsxs)(`div`,{className:`absolute inset-x-0 top-6 mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8`,children:[(0,B.jsxs)(o,{to:`/`,className:`inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-2 text-xs font-bold text-background backdrop-blur transition-colors hover:bg-background/35`,children:[(0,B.jsx)(b,{className:`size-4`}),`Kembali ke Beranda`]}),(0,B.jsxs)(`div`,{className:`flex gap-2`,children:[(0,B.jsxs)(`button`,{onClick:()=>{f(e=>!e),le.success(d?`Dihapus dari simpanan`:`Disimpan ke simpanan Anda`)},"aria-pressed":d,className:`inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-2 text-xs font-bold text-background backdrop-blur transition-colors hover:bg-background/35`,children:[d?(0,B.jsx)(ye,{className:`size-4 fill-gold text-gold`}):(0,B.jsx)(ge,{className:`size-4`}),`Simpan`]}),(0,B.jsxs)(`button`,{onClick:()=>void _(),className:`inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-2 text-xs font-bold text-background backdrop-blur transition-colors hover:bg-background/35`,children:[(0,B.jsx)(S,{className:`size-4`}),`Bagikan`]})]})]}),(0,B.jsxs)(`div`,{className:`absolute inset-x-0 bottom-0 mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8`,children:[(0,B.jsx)(`span`,{className:`inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1.5 text-[11px] font-extrabold text-gold-foreground`,children:e.adwi??n.label}),(0,B.jsx)(`h1`,{className:`mt-3 text-3xl font-black tracking-tight text-background sm:text-5xl`,children:e.nama}),(0,B.jsxs)(`p`,{className:`mt-2 flex items-center gap-2 text-sm font-semibold text-background/90`,children:[(0,B.jsx)(w,{className:`size-4 text-gold`}),e.kabupaten,`, `,e.provinsi]})]}),(0,B.jsxs)(`div`,{className:`absolute right-4 bottom-8 flex gap-2 sm:right-8`,children:[(0,B.jsx)(`button`,{"aria-label":`Foto sebelumnya`,onClick:()=>c(t=>(t-1+e.galeri.length)%e.galeri.length),className:`grid size-10 place-items-center rounded-full bg-background/20 text-background backdrop-blur hover:bg-background/35`,children:(0,B.jsx)(O,{className:`size-5`})}),(0,B.jsx)(`button`,{"aria-label":`Foto berikutnya`,onClick:()=>c(t=>(t+1)%e.galeri.length),className:`grid size-10 place-items-center rounded-full bg-background/20 text-background backdrop-blur hover:bg-background/35`,children:(0,B.jsx)(D,{className:`size-5`})})]})]}),(0,B.jsx)(`div`,{className:`relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8`,children:(0,B.jsxs)(`div`,{className:`-mt-8 grid gap-4 rounded-3xl border border-border bg-card p-5 sm:p-6 shadow-float sm:grid-cols-2 md:grid-cols-[repeat(3,minmax(0,1fr))_auto] md:items-center`,children:[(0,B.jsxs)(`div`,{children:[(0,B.jsx)(`p`,{className:`text-[11px] font-bold tracking-wider text-muted-foreground uppercase`,children:`Klasifikasi`}),(0,B.jsx)(`span`,{className:`mt-1.5 inline-flex rounded-full px-3 py-1 text-xs font-bold ${n.badgeClass}`,children:n.label})]}),(0,B.jsxs)(`div`,{className:`min-w-0`,children:[(0,B.jsx)(`p`,{className:`text-[11px] font-bold tracking-wider text-muted-foreground uppercase`,children:`Pengelola Wisata`}),(0,B.jsx)(`p`,{className:`mt-1.5 truncate text-sm font-extrabold text-foreground`,children:e.pokdarwis})]}),(0,B.jsxs)(`div`,{children:[(0,B.jsx)(`p`,{className:`text-[11px] font-bold tracking-wider text-muted-foreground uppercase`,children:`Prestasi Resmi 2026`}),(0,B.jsxs)(`p`,{className:`mt-1.5 flex items-center gap-1.5 text-xs font-extrabold text-foreground`,children:[(0,B.jsx)(se,{className:`size-4 text-gold shrink-0`}),e.adwi]})]}),(0,B.jsxs)(`a`,{href:`https://wa.me/${e.whatsapp}?text=Halo%20Pengelola%20Desa%20Wisata%20Ekang%20Anculai,%20saya%20ingin%20tanya%20informasi%20potensi%20dan%20wisata`,target:`_blank`,rel:`noreferrer`,className:`inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-xs font-bold text-primary-foreground transition-all duration-300 hover:bg-emerald-deep`,children:[(0,B.jsx)(ne,{className:`size-4`}),`Hubungi Pengelola via WA`]})]})}),(0,B.jsx)(`div`,{className:`mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8`,children:(0,B.jsxs)(it,{defaultValue:`tentang`,children:[(0,B.jsx)(at,{className:`no-scrollbar h-auto w-full justify-start gap-1 overflow-x-auto rounded-2xl bg-card p-1.5 shadow-soft`,children:[[`tentang`,`Profil & Sejarah`],[`fasilitas`,`Atraksi & Fasilitas`],[`umkm`,`Produk UMKM 2026`],[`kegiatan`,`Kegiatan Desa 2026`],[`paket`,`Paket Wisata`],[`galeri`,`Galeri Dokumentasi`],[`peta`,`Peta & Aksesibilitas`]].map(([e,t])=>(0,B.jsx)(Q,{value:e,className:`shrink-0 rounded-full px-4 py-2.5 text-xs font-bold text-muted-foreground data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-card`,children:t},e))}),(0,B.jsx)($,{value:`tentang`,className:`mt-6`,children:(0,B.jsxs)(`div`,{className:`grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]`,children:[(0,B.jsxs)(`article`,{className:`rounded-3xl border border-border bg-card p-6 shadow-card sm:p-8`,children:[(0,B.jsx)(`h2`,{className:`text-xl font-extrabold text-foreground`,children:`Sekilas Profil Desa`}),(0,B.jsx)(`p`,{className:`mt-3 text-sm leading-relaxed text-muted-foreground`,children:e.deskripsi}),(0,B.jsx)(`h3`,{className:`mt-7 text-lg font-extrabold text-foreground`,children:`Sejarah & Asal Usul Nama`}),(0,B.jsx)(`p`,{className:`mt-3 text-sm leading-relaxed text-muted-foreground`,children:e.sejarah}),(0,B.jsx)(`div`,{className:`mt-2`,children:(0,B.jsx)(A,{source:{name:`Website Resmi Desa Ekang Anculai`,url:`https://desaekanganculai.bintankab.go.id/profil/sejarah`}})}),e.perbatasan?(0,B.jsxs)(B.Fragment,{children:[(0,B.jsx)(`h3`,{className:`mt-7 text-lg font-extrabold text-foreground`,children:`Batas Wilayah & Kondisi Geografis`}),(0,B.jsxs)(`div`,{className:`mt-3 grid gap-2.5 sm:grid-cols-2 text-xs font-medium`,children:[(0,B.jsxs)(`div`,{className:`rounded-2xl border border-border bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`font-bold text-primary`,children:`Utara:`}),` `,e.perbatasan.utara]}),(0,B.jsxs)(`div`,{className:`rounded-2xl border border-border bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`font-bold text-primary`,children:`Selatan:`}),` `,e.perbatasan.selatan]}),(0,B.jsxs)(`div`,{className:`rounded-2xl border border-border bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`font-bold text-primary`,children:`Timur:`}),` `,e.perbatasan.timur]}),(0,B.jsxs)(`div`,{className:`rounded-2xl border border-border bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`font-bold text-primary`,children:`Barat:`}),` `,e.perbatasan.barat]})]}),(0,B.jsx)(`div`,{className:`mt-2`,children:(0,B.jsx)(A,{source:{name:`Website Resmi Desa Ekang Anculai`,url:`https://desaekanganculai.bintankab.go.id/profil/geografis`}})})]}):null,e.kesenian?.length?(0,B.jsxs)(B.Fragment,{children:[(0,B.jsx)(`h3`,{className:`mt-8 text-lg font-extrabold text-foreground`,children:`Sanggar & Kesenian Budaya`}),(0,B.jsx)(`div`,{className:`mt-3.5 space-y-3`,children:e.kesenian.map(e=>(0,B.jsxs)(`div`,{className:`flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 shadow-soft transition-colors hover:border-primary/40`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-accent text-primary`,children:(0,B.jsx)(k,{className:`size-4.5`})}),(0,B.jsx)(`p`,{className:`text-xs font-semibold leading-relaxed text-foreground`,children:e})]},e))})]}):null,e.panduanKunjungan?.etikaKunjungan?.length?(0,B.jsxs)(B.Fragment,{children:[(0,B.jsx)(`h3`,{className:`mt-8 text-lg font-extrabold text-foreground`,children:`Etika & Panduan Kunjungan Wisatawan`}),(0,B.jsx)(`ul`,{className:`mt-3.5 space-y-2.5`,children:e.panduanKunjungan.etikaKunjungan.map(e=>(0,B.jsxs)(`li`,{className:`flex items-start gap-2.5 text-xs font-semibold text-foreground`,children:[(0,B.jsx)(`span`,{className:`mt-1.5 size-1.5 shrink-0 rounded-full bg-primary`}),(0,B.jsx)(`span`,{className:`leading-relaxed`,children:e})]},e))})]}):null,(0,B.jsx)(`div`,{className:`mt-8 border-t border-border pt-4`,children:(0,B.jsx)(A,{source:e.source})})]}),(0,B.jsxs)(`aside`,{className:`space-y-6`,children:[e.kelembagaan?(0,B.jsxs)(`div`,{className:`rounded-3xl border border-border bg-card p-6 shadow-card`,children:[(0,B.jsx)(`h3`,{className:`text-xs font-extrabold tracking-wider text-muted-foreground uppercase`,children:`Kelembagaan & Pengelola`}),(0,B.jsxs)(`div`,{className:`mt-4 space-y-3`,children:[(0,B.jsxs)(`div`,{className:`flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(y,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`BUMDes Resmi`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:`BUMDes Anugrah Ekang Anculai`})]})]}),(0,B.jsxs)(`div`,{className:`flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(ce,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Pengelola Wisata`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.kelembagaan.pokdarwis})]})]}),(0,B.jsxs)(`div`,{className:`flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(k,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Sanggar Budaya`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.kelembagaan.sanggar})]})]}),(0,B.jsxs)(`div`,{className:`flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(ve,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Kemitraan Instansi`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.kelembagaan.mitra})]})]})]})]}):null,e.alamat?(0,B.jsxs)(`div`,{className:`rounded-3xl border border-border bg-card p-6 shadow-card`,children:[(0,B.jsx)(`h3`,{className:`text-xs font-extrabold tracking-wider text-muted-foreground uppercase`,children:`Informasi Kontak & Akses`}),(0,B.jsxs)(`div`,{className:`mt-4 space-y-3`,children:[(0,B.jsxs)(`div`,{className:`flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-gold/15 text-gold`,children:(0,B.jsx)(w,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs min-w-0`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Alamat Kantor & Wilayah`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium leading-relaxed`,children:e.alamat})]})]}),e.luasDesa?(0,B.jsxs)(`div`,{className:`flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(be,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Luas Wilayah Desa`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.luasDesa})]})]}):null,e.luasKawasanWisata?(0,B.jsxs)(`div`,{className:`flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(ie,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Kawasan Wisata`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.luasKawasanWisata})]})]}):null,e.jamOperasional?(0,B.jsxs)(`div`,{className:`flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(oe,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Jam Operasional`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.jamOperasional})]})]}):null,e.waktuTerbaik?(0,B.jsxs)(`div`,{className:`flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-amber-500/10 text-amber-600`,children:(0,B.jsx)(re,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Waktu Kunjungan Terbaik`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.waktuTerbaik})]})]}):null,e.instagram?(0,B.jsxs)(`div`,{className:`flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(ee,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs truncate`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Instagram Resmi`}),(0,B.jsx)(`span`,{className:`text-muted-foreground font-medium`,children:e.instagram})]})]}):null,e.website?(0,B.jsxs)(`div`,{className:`flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(M,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs truncate`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Website Wisata`}),(0,B.jsx)(`a`,{href:`https://${e.website}`,target:`_blank`,rel:`noreferrer`,className:`text-primary font-bold hover:underline`,children:e.website})]})]}):null,e.pemdesWebsite?(0,B.jsxs)(`div`,{className:`flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,children:[(0,B.jsx)(`span`,{className:`grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,children:(0,B.jsx)(_e,{className:`size-4.5`})}),(0,B.jsxs)(`div`,{className:`text-xs truncate`,children:[(0,B.jsx)(`span`,{className:`block font-extrabold text-foreground`,children:`Portal Resmi Pemdes`}),(0,B.jsx)(`a`,{href:e.pemdesWebsite,target:`_blank`,rel:`noreferrer`,className:`text-primary font-bold hover:underline truncate block`,children:e.pemdesWebsite})]})]}):null]})]}):null]})]})}),(0,B.jsx)($,{value:`fasilitas`,className:`mt-6`,children:(0,B.jsxs)(`div`,{className:`rounded-3xl border border-border bg-card p-6 shadow-card sm:p-8`,children:[(0,B.jsx)(`h2`,{className:`text-xl font-extrabold text-foreground`,children:`Fasilitas Tersedia`}),(0,B.jsx)(`div`,{className:`mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4`,children:e.fasilitas.map(e=>{let t=st[e]??M;return(0,B.jsxs)(`div`,{className:`card-lift rounded-2xl border border-border bg-surface p-5 text-center`,children:[(0,B.jsx)(`span`,{className:`mx-auto grid size-12 place-items-center rounded-full bg-accent text-primary`,children:(0,B.jsx)(t,{className:`size-5`})}),(0,B.jsx)(`p`,{className:`mt-3 text-xs font-bold text-foreground`,children:e})]},e)})})]})}),(0,B.jsxs)($,{value:`umkm`,className:`mt-6 space-y-6`,children:[(0,B.jsx)(`div`,{className:`flex flex-wrap items-center gap-2 pb-1`,children:[{id:`Semua`,label:`Semua Kategori`,icon:`✨`},{id:`Kuliner & Olahan Pangan`,label:`Kuliner & Olahan Pangan`,icon:`🍲`},{id:`Kerajinan & Produk Khas`,label:`Kerajinan & Produk Khas`,icon:`🎨`},{id:`Oleh-oleh & Produk Kreatif`,label:`Oleh-oleh & Produk Kreatif`,icon:`🎁`}].map(e=>(0,B.jsxs)(`button`,{onClick:()=>m(e.id),className:`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer ${p===e.id?`bg-primary text-primary-foreground shadow-card`:`bg-card border border-border text-muted-foreground hover:text-foreground hover:border-primary/40`}`,children:[(0,B.jsx)(`span`,{children:e.icon}),(0,B.jsx)(`span`,{children:e.label})]},e.id))}),(0,B.jsx)(`div`,{className:`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`,children:(t?.umkmList&&t.umkmList.length>0?t.umkmList:e.umkmList??[]).filter(e=>p===`Semua`||e.kategori===p).map(e=>(0,B.jsxs)(`div`,{className:`card-lift flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-card`,children:[(0,B.jsxs)(`div`,{children:[e.image&&(0,B.jsx)(`img`,{src:e.image,alt:e.nama,className:`aspect-video w-full rounded-2xl object-cover`}),(0,B.jsxs)(`div`,{className:`mt-3 flex items-center justify-between gap-2`,children:[(0,B.jsx)(`span`,{className:`inline-block rounded-full bg-emerald-500/10 px-3 py-1 text-[11px] font-extrabold text-emerald-700 dark:text-emerald-300`,children:e.kategori}),e.hargaInfo&&(0,B.jsx)(`span`,{className:`text-xs font-bold text-foreground font-mono`,children:e.hargaInfo})]}),(0,B.jsx)(`h3`,{className:`mt-2 text-base font-extrabold text-foreground`,children:e.nama}),(0,B.jsx)(`p`,{className:`mt-2 text-xs font-medium leading-relaxed text-muted-foreground`,children:e.deskripsi})]}),(0,B.jsx)(`div`,{className:`mt-4 pt-3 border-t border-border/60`,children:(0,B.jsx)(A,{source:e.source})})]},e.id))})]}),(0,B.jsx)($,{value:`kegiatan`,className:`mt-6`,children:(0,B.jsx)(`div`,{className:`grid gap-6 md:grid-cols-2`,children:(t?.kegiatanList===void 0?e.kegiatanList??[]:t.kegiatanList).map(e=>(0,B.jsxs)(`div`,{className:`card-lift flex flex-col justify-between rounded-3xl border border-border bg-card p-6 shadow-card`,children:[(0,B.jsxs)(`div`,{children:[(0,B.jsx)(`span`,{className:`text-xs font-bold text-primary`,children:e.tanggal}),(0,B.jsx)(`h3`,{className:`mt-1 text-lg font-extrabold text-foreground`,children:e.judul}),(0,B.jsx)(`p`,{className:`mt-2 text-xs leading-relaxed text-muted-foreground`,children:e.deskripsi})]}),(0,B.jsx)(A,{source:e.source})]},e.id))})}),(0,B.jsx)($,{value:`paket`,className:`mt-6`,children:(0,B.jsx)(`div`,{className:`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`,children:e.paket.map(e=>(0,B.jsxs)(`div`,{className:`card-lift flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-card group hover:border-primary/50 transition-all`,children:[(0,B.jsxs)(`div`,{children:[(0,B.jsxs)(`div`,{className:`relative aspect-video w-full overflow-hidden rounded-2xl bg-muted`,children:[(0,B.jsx)(`img`,{src:e.image,alt:e.nama,className:`size-full object-cover transition-transform duration-500 group-hover:scale-105`}),(0,B.jsx)(`span`,{className:`absolute top-2.5 right-2.5 rounded-full bg-black/60 backdrop-blur px-3 py-1 text-[10px] font-black text-white uppercase`,children:`Paket Resmi Desa`})]}),(0,B.jsx)(`h3`,{className:`mt-4 text-base font-extrabold text-foreground`,children:e.nama}),(0,B.jsx)(`p`,{className:`mt-2 text-xs text-muted-foreground leading-relaxed font-medium`,children:e.highlight})]}),(0,B.jsxs)(`div`,{className:`mt-4 pt-3 border-t border-border/60 flex items-center justify-between`,children:[(0,B.jsxs)(`div`,{children:[(0,B.jsx)(`p`,{className:`text-[10px] uppercase font-bold text-muted-foreground`,children:`Keterangan Biaya`}),(0,B.jsx)(`p`,{className:`text-sm font-black text-primary`,children:e.hargaText})]}),(0,B.jsxs)(o,{to:`/rencanakan-kunjungan`,className:`inline-flex items-center gap-1 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-bold text-primary hover:bg-primary hover:text-primary-foreground transition-all`,children:[(0,B.jsx)(`span`,{children:`Lihat Rute`}),(0,B.jsx)(me,{className:`size-3`})]})]}),(0,B.jsx)(`div`,{className:`mt-2`,children:(0,B.jsx)(A,{source:e.source})})]},e.id))})}),(0,B.jsx)($,{value:`galeri`,className:`mt-6`,children:(0,B.jsx)(`div`,{className:`grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4`,children:e.galeri.map((e,t)=>(0,B.jsxs)(`button`,{onClick:()=>u(e),className:`group relative aspect-square overflow-hidden rounded-2xl border border-border`,children:[(0,B.jsx)(`img`,{src:e,alt:`Galeri ${t+1}`,className:`size-full object-cover transition-transform group-hover:scale-105`}),(0,B.jsx)(`span`,{className:`absolute inset-0 grid place-items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity text-white`,children:(0,B.jsx)(E,{className:`size-6`})})]},t))})}),(0,B.jsx)($,{value:`peta`,className:`mt-6`,children:(0,B.jsx)(`div`,{className:`min-h-[460px] overflow-hidden rounded-3xl border border-border shadow-card`,children:(0,B.jsx)(N.Suspense,{fallback:(0,B.jsx)(`div`,{className:`p-12 text-center text-xs`,children:`Memuat peta...`}),children:(0,B.jsx)(ot,{items:[e],landmarks:t.landmarkList})})})})]})}),l&&(0,B.jsx)(r,{open:!!l,onOpenChange:()=>u(null),children:(0,B.jsx)(i,{className:`max-w-4xl p-0 overflow-hidden bg-black border-0`,children:(0,B.jsx)(`img`,{src:l,alt:`Enlarged`,className:`w-full h-auto max-h-[85vh] object-contain`})})})]})}export{ct as component};
+const __vite__mapDeps = (
+  i,
+  m = __vite__mapDeps,
+  d = m.f ||
+    (m.f = [
+      "assets/MapCanvas-Y1BSyf32.js",
+      "assets/jsx-runtime-D1ym7qjA.js",
+      "assets/link-C7I64epB.js",
+      "assets/jadesta-DqHZHQ8d.js",
+      "assets/chevron-down-DwehrFbR.js",
+      "assets/chevron-up-Bk1kuIOl.js",
+      "assets/navigation-B8_I2oKE.js",
+      "assets/search-DVU4GdGK.js",
+      "assets/share-2-q7_uIP0E.js",
+      "assets/index-C7uF6Peh.js",
+      "assets/cms-store-CRB3p42d.js",
+      "assets/utils-Ctb90B5i.js",
+      "assets/MapCanvas-vh-t_kPv.css",
+    ]),
+) => i.map((i) => d[i]);
+import { i as e, l as t, t as n } from "./jsx-runtime-D1ym7qjA.js";
+import { O as r, k as i, n as a } from "./cms-store-CRB3p42d.js";
+import { t as o } from "./link-C7I64epB.js";
+import {
+  _ as s,
+  d as c,
+  f as l,
+  g as u,
+  h as d,
+  m as f,
+  o as p,
+  t as m,
+  v as h,
+  y as g,
+} from "./utils-Ctb90B5i.js";
+import { D as _, p as v } from "./jadesta-DqHZHQ8d.js";
+import { n as y, r as b, t as x } from "./car-Dq01rhxA.js";
+import { t as S } from "./share-2-q7_uIP0E.js";
+import {
+  A as C,
+  C as w,
+  E as T,
+  I as E,
+  N as D,
+  P as O,
+  T as ee,
+  _ as k,
+  a as te,
+  b as ne,
+  c as A,
+  g as re,
+  h as ie,
+  i as ae,
+  j as oe,
+  k as se,
+  m as ce,
+  p as le,
+  r as ue,
+  t as de,
+  u as fe,
+  v as pe,
+  z as me,
+} from "./index-C7uF6Peh.js";
+import { n as he, t as j } from "./dist-Cn-7foiA.js";
+var ge = _(`bookmark`, [
+    [
+      `path`,
+      {
+        d: `M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z`,
+        key: `oz39mx`,
+      },
+    ],
+  ]),
+  _e = _(`building`, [
+    [`path`, { d: `M12 10h.01`, key: `1nrarc` }],
+    [`path`, { d: `M12 14h.01`, key: `1etili` }],
+    [`path`, { d: `M12 6h.01`, key: `1vi96p` }],
+    [`path`, { d: `M16 10h.01`, key: `1m94wz` }],
+    [`path`, { d: `M16 14h.01`, key: `1gbofw` }],
+    [`path`, { d: `M16 6h.01`, key: `1x0f13` }],
+    [`path`, { d: `M8 10h.01`, key: `19clt8` }],
+    [`path`, { d: `M8 14h.01`, key: `6423bh` }],
+    [`path`, { d: `M8 6h.01`, key: `1dz90k` }],
+    [`path`, { d: `M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3`, key: `cabbwy` }],
+    [`rect`, { x: `4`, y: `2`, width: `16`, height: `20`, rx: `2`, key: `1uxh74` }],
+  ]),
+  M = _(`globe`, [
+    [`circle`, { cx: `12`, cy: `12`, r: `10`, key: `1mglay` }],
+    [`path`, { d: `M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20`, key: `13o1zl` }],
+    [`path`, { d: `M2 12h20`, key: `9i4pu4` }],
+  ]),
+  ve = _(`handshake`, [
+    [`path`, { d: `m11 17 2 2a1 1 0 1 0 3-3`, key: `efffak` }],
+    [
+      `path`,
+      {
+        d: `m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4`,
+        key: `9pr0kb`,
+      },
+    ],
+    [`path`, { d: `m21 3 1 11h-2`, key: `1tisrp` }],
+    [`path`, { d: `M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3`, key: `1uvwmv` }],
+    [`path`, { d: `M3 4h8`, key: `1ep09j` }],
+  ]),
+  ye = _(`heart`, [
+    [
+      `path`,
+      {
+        d: `M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5`,
+        key: `mvr1a0`,
+      },
+    ],
+  ]),
+  be = _(`maximize-2`, [
+    [`path`, { d: `M15 3h6v6`, key: `1q9fwt` }],
+    [`path`, { d: `m21 3-7 7`, key: `1l2asr` }],
+    [`path`, { d: `m3 21 7-7`, key: `tjx5ai` }],
+    [`path`, { d: `M9 21H3v-6`, key: `wtvkvv` }],
+  ]),
+  xe = _(`toilet`, [
+    [
+      `path`,
+      {
+        d: `M7 12h13a1 1 0 0 1 1 1 5 5 0 0 1-5 5h-.598a.5.5 0 0 0-.424.765l1.544 2.47a.5.5 0 0 1-.424.765H5.402a.5.5 0 0 1-.424-.765L7 18`,
+        key: `kc4kqr`,
+      },
+    ],
+    [`path`, { d: `M8 18a5 5 0 0 1-5-5V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8`, key: `1tqs57` }],
+  ]),
+  Se = _(`wifi`, [
+    [`path`, { d: `M12 20h.01`, key: `zekei9` }],
+    [`path`, { d: `M2 8.82a15 15 0 0 1 20 0`, key: `dnpr2z` }],
+    [`path`, { d: `M5 12.859a10 10 0 0 1 14 0`, key: `1x1e6c` }],
+    [`path`, { d: `M8.5 16.429a5 5 0 0 1 7 0`, key: `1bycff` }],
+  ]),
+  N = t(e(), 1),
+  Ce = Object.defineProperty,
+  P = (e, t) => Ce(e, `name`, { value: t, configurable: !0 }),
+  F = !1;
+function I() {
+  let [e, t] = N.useState(F);
+  return (
+    N.useEffect(() => {
+      F || ((F = !0), t(!0));
+    }, []),
+    e
+  );
+}
+P(I, `useIsHydrated`);
+var L = N.useSyncExternalStore;
+function R() {
+  return () => {};
+}
+P(R, `subscribe`);
+function z() {
+  return L(
+    R,
+    () => !0,
+    () => !1,
+  );
+}
+P(z, `useIsHydratedModern`);
+var we = typeof L == `function` ? z : I,
+  B = n(),
+  Te = Object.defineProperty,
+  V = (e, t) => Te(e, `name`, { value: t, configurable: !0 }),
+  H = `rovingFocusGroup.onEntryFocus`,
+  Ee = { bubbles: !1, cancelable: !0 },
+  U = `RovingFocusGroup`,
+  [W, G, De] = he(U),
+  [Oe, ke] = s(U, [De]),
+  [Ae, je] = Oe(U),
+  Me = N.forwardRef(
+    V(function (e, t) {
+      return (0, B.jsx)(W.Provider, {
+        scope: e.__scopeRovingFocusGroup,
+        children: (0, B.jsx)(W.Slot, {
+          scope: e.__scopeRovingFocusGroup,
+          children: (0, B.jsx)(Ne, { ...e, ref: t }),
+        }),
+      });
+    }, `RovingFocusGroup`),
+  ),
+  Ne = N.forwardRef(
+    V(function (e, t) {
+      let {
+          __scopeRovingFocusGroup: n,
+          orientation: r,
+          loop: i = !1,
+          dir: a,
+          currentTabStopId: o,
+          defaultCurrentTabStopId: s,
+          onCurrentTabStopIdChange: u,
+          onEntryFocus: d,
+          preventScrollOnEntryFocus: p = !1,
+          ...m
+        } = e,
+        _ = N.useRef(null),
+        v = h(t, _),
+        y = j(a),
+        [b, x] = f({ prop: o, defaultProp: s ?? null, onChange: u, caller: U }),
+        [S, C] = N.useState(!1),
+        w = c(d),
+        T = G(n),
+        E = N.useRef(!1),
+        [D, O] = N.useState(0);
+      return (
+        N.useEffect(() => {
+          let e = _.current;
+          if (e) return (e.addEventListener(H, w), () => e.removeEventListener(H, w));
+        }, [w]),
+        (0, B.jsx)(Ae, {
+          scope: n,
+          orientation: r,
+          dir: y,
+          loop: i,
+          currentTabStopId: b,
+          onItemFocus: N.useCallback((e) => x(e), [x]),
+          onItemShiftTab: N.useCallback(() => C(!0), []),
+          onFocusableItemAdd: N.useCallback(() => O((e) => e + 1), []),
+          onFocusableItemRemove: N.useCallback(() => O((e) => e - 1), []),
+          children: (0, B.jsx)(l.div, {
+            tabIndex: S || D === 0 ? -1 : 0,
+            "data-orientation": r,
+            ...m,
+            ref: v,
+            style: { outline: `none`, ...e.style },
+            onMouseDown: g(e.onMouseDown, () => {
+              E.current = !0;
+            }),
+            onFocus: g(e.onFocus, (e) => {
+              let t = !E.current;
+              if (e.target === e.currentTarget && t && !S) {
+                let t = new CustomEvent(H, Ee);
+                if ((e.currentTarget.dispatchEvent(t), !t.defaultPrevented)) {
+                  let e = T().filter((e) => e.focusable);
+                  K(
+                    [e.find((e) => e.active), e.find((e) => e.id === b), ...e]
+                      .filter(Boolean)
+                      .map((e) => e.ref.current),
+                    p,
+                  );
+                }
+              }
+              E.current = !1;
+            }),
+            onBlur: g(e.onBlur, () => C(!1)),
+          }),
+        })
+      );
+    }, `RovingFocusGroupImpl`),
+  ),
+  Pe = `RovingFocusGroupItem`,
+  Fe = N.forwardRef(
+    V(function (e, t) {
+      let {
+          __scopeRovingFocusGroup: n,
+          focusable: r = !0,
+          active: i = !1,
+          tabStopId: a,
+          children: o,
+          ...s
+        } = e,
+        c = d(),
+        f = a || c,
+        p = je(Pe, n),
+        m = p.currentTabStopId === f,
+        h = G(n),
+        { onFocusableItemAdd: _, onFocusableItemRemove: v, currentTabStopId: y } = p,
+        b = we();
+      return (
+        u(() => {
+          if (!(!b || !r)) return (_(), () => v());
+        }, [b, r, _, v]),
+        N.useEffect(() => {
+          if (!(b || !r)) return (_(), () => v());
+        }, [b, r, _, v]),
+        (0, B.jsx)(W.ItemSlot, {
+          scope: n,
+          id: f,
+          focusable: r,
+          active: i,
+          children: (0, B.jsx)(l.span, {
+            tabIndex: m ? 0 : -1,
+            "data-orientation": p.orientation,
+            ...s,
+            ref: t,
+            onMouseDown: g(e.onMouseDown, (e) => {
+              r ? p.onItemFocus(f) : e.preventDefault();
+            }),
+            onFocus: g(e.onFocus, () => p.onItemFocus(f)),
+            onKeyDown: g(e.onKeyDown, (e) => {
+              if (e.key === `Tab` && e.shiftKey) {
+                p.onItemShiftTab();
+                return;
+              }
+              if (e.target !== e.currentTarget) return;
+              let t = Re(e, p.orientation, p.dir);
+              if (t !== void 0) {
+                if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
+                e.preventDefault();
+                let n = h()
+                  .filter((e) => e.focusable)
+                  .map((e) => e.ref.current);
+                if (t === `last`) n.reverse();
+                else if (t === `prev` || t === `next`) {
+                  t === `prev` && n.reverse();
+                  let r = n.indexOf(e.currentTarget);
+                  n = p.loop ? ze(n, r + 1) : n.slice(r + 1);
+                }
+                setTimeout(() => K(n));
+              }
+            }),
+            children:
+              typeof o == `function` ? o({ isCurrentTabStop: m, hasTabStop: y != null }) : o,
+          }),
+        })
+      );
+    }, `RovingFocusGroupItem`),
+  ),
+  Ie = {
+    ArrowLeft: `prev`,
+    ArrowUp: `prev`,
+    ArrowRight: `next`,
+    ArrowDown: `next`,
+    PageUp: `first`,
+    Home: `first`,
+    PageDown: `last`,
+    End: `last`,
+  };
+function Le(e, t) {
+  return t === `rtl`
+    ? e === `ArrowLeft`
+      ? `ArrowRight`
+      : e === `ArrowRight`
+        ? `ArrowLeft`
+        : e
+    : e;
+}
+V(Le, `getDirectionAwareKey`);
+function Re(e, t, n) {
+  let r = Le(e.key, n);
+  if (
+    !(t === `vertical` && [`ArrowLeft`, `ArrowRight`].includes(r)) &&
+    !(t === `horizontal` && [`ArrowUp`, `ArrowDown`].includes(r))
+  )
+    return Ie[r];
+}
+V(Re, `getFocusIntent`);
+function K(e, t = !1) {
+  let n = document.activeElement;
+  for (let r of e)
+    if (r === n || (r.focus({ preventScroll: t }), document.activeElement !== n)) return;
+}
+V(K, `focusFirst`);
+function ze(e, t) {
+  return e.map((n, r) => e[(t + r) % e.length]);
+}
+V(ze, `wrapArray`);
+var Be = Me,
+  Ve = Fe,
+  He = Object.defineProperty,
+  q = (e, t) => He(e, `name`, { value: t, configurable: !0 }),
+  J = `Tabs`,
+  [Ue, We] = s(J, [ke]),
+  Ge = ke(),
+  [Ke, Y] = Ue(J),
+  qe = N.forwardRef(
+    q(function (e, t) {
+      let {
+          __scopeTabs: n,
+          value: r,
+          onValueChange: i,
+          defaultValue: a,
+          orientation: o = `horizontal`,
+          dir: s,
+          activationMode: c = `automatic`,
+          ...u
+        } = e,
+        p = j(s),
+        [m, h] = f({ prop: r, onChange: i, defaultProp: a ?? ``, caller: J });
+      return (0, B.jsx)(Ke, {
+        scope: n,
+        baseId: d(),
+        value: m,
+        onValueChange: h,
+        orientation: o,
+        dir: p,
+        activationMode: c,
+        children: (0, B.jsx)(l.div, { dir: p, "data-orientation": o, ...u, ref: t }),
+      });
+    }, `Tabs`),
+  ),
+  Je = `TabsList`,
+  Ye = N.forwardRef(
+    q(function (e, t) {
+      let { __scopeTabs: n, loop: r = !0, ...i } = e,
+        a = Y(Je, n),
+        o = Ge(n);
+      return (0, B.jsx)(Be, {
+        asChild: !0,
+        ...o,
+        orientation: a.orientation,
+        dir: a.dir,
+        loop: r,
+        children: (0, B.jsx)(l.div, {
+          role: `tablist`,
+          "aria-orientation": a.orientation,
+          ...i,
+          ref: t,
+        }),
+      });
+    }, `TabsList`),
+  ),
+  Xe = `TabsTrigger`,
+  Ze = N.forwardRef(
+    q(function (e, t) {
+      let { __scopeTabs: n, value: r, disabled: i = !1, ...a } = e,
+        o = Y(Xe, n),
+        s = Ge(n),
+        c = X(o.baseId, r),
+        u = Z(o.baseId, r),
+        d = r === o.value;
+      return (0, B.jsx)(Ve, {
+        asChild: !0,
+        ...s,
+        focusable: !i,
+        active: d,
+        children: (0, B.jsx)(l.button, {
+          type: `button`,
+          role: `tab`,
+          "aria-selected": d,
+          "aria-controls": u,
+          "data-state": d ? `active` : `inactive`,
+          "data-disabled": i ? `` : void 0,
+          disabled: i,
+          id: c,
+          ...a,
+          ref: t,
+          onMouseDown: g(e.onMouseDown, (e) => {
+            !i && e.button === 0 && e.ctrlKey === !1 ? o.onValueChange(r) : e.preventDefault();
+          }),
+          onKeyDown: g(e.onKeyDown, (e) => {
+            i ||
+              e.target !== e.currentTarget ||
+              ([` `, `Enter`].includes(e.key) && o.onValueChange(r));
+          }),
+          onFocus: g(e.onFocus, () => {
+            let e = o.activationMode !== `manual`;
+            !d && !i && e && o.onValueChange(r);
+          }),
+        }),
+      });
+    }, `TabsTrigger`),
+  ),
+  Qe = `TabsContent`,
+  $e = N.forwardRef(
+    q(function (e, t) {
+      let { __scopeTabs: n, value: r, forceMount: i, children: a, ...o } = e,
+        s = Y(Qe, n),
+        c = X(s.baseId, r),
+        u = Z(s.baseId, r),
+        d = r === s.value,
+        f = N.useRef(d);
+      return (
+        N.useEffect(() => {
+          let e = requestAnimationFrame(() => (f.current = !1));
+          return () => cancelAnimationFrame(e);
+        }, []),
+        (0, B.jsx)(p, {
+          present: i || d,
+          children: ({ present: n }) =>
+            (0, B.jsx)(l.div, {
+              "data-state": d ? `active` : `inactive`,
+              "data-orientation": s.orientation,
+              role: `tabpanel`,
+              "aria-labelledby": c,
+              hidden: !n,
+              id: u,
+              tabIndex: 0,
+              ...o,
+              ref: t,
+              style: { ...e.style, animationDuration: f.current ? `0s` : void 0 },
+              children: n && a,
+            }),
+        })
+      );
+    }, `TabsContent`),
+  );
+function X(e, t) {
+  return `${e}-trigger-${t}`;
+}
+q(X, `makeTriggerId`);
+function Z(e, t) {
+  return `${e}-content-${t}`;
+}
+q(Z, `makeContentId`);
+var et = qe,
+  tt = Ye,
+  nt = Ze,
+  rt = $e,
+  it = et,
+  at = N.forwardRef(({ className: e, ...t }, n) =>
+    (0, B.jsx)(tt, {
+      ref: n,
+      className: m(
+        `inline-flex h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground`,
+        e,
+      ),
+      ...t,
+    }),
+  );
+at.displayName = tt.displayName;
+var Q = N.forwardRef(({ className: e, ...t }, n) =>
+  (0, B.jsx)(nt, {
+    ref: n,
+    className: m(
+      `inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow`,
+      e,
+    ),
+    ...t,
+  }),
+);
+Q.displayName = nt.displayName;
+var $ = N.forwardRef(({ className: e, ...t }, n) =>
+  (0, B.jsx)(rt, {
+    ref: n,
+    className: m(
+      `mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2`,
+      e,
+    ),
+    ...t,
+  }),
+);
+$.displayName = rt.displayName;
+var ot = (0, N.lazy)(() =>
+    fe(
+      () => import(`./MapCanvas-Y1BSyf32.js`),
+      __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+    ),
+  ),
+  st = {
+    Homestay: T,
+    Kuliner: C,
+    Souvenir: pe,
+    "Toilet Umum": xe,
+    "Area Parkir": x,
+    Internet: Se,
+    "Pemandu Lokal Berlisensi": ce,
+  };
+function ct() {
+  let { village: e } = de.useLoaderData(),
+    t = a(),
+    n = v[e.klasifikasi],
+    [s, c] = (0, N.useState)(0),
+    [l, u] = (0, N.useState)(null),
+    [d, f] = (0, N.useState)(!1),
+    [p, m] = (0, N.useState)(`Semua`);
+  (0, N.useEffect)(() => c(0), [e.slug]);
+  let h = te({
+      id: e.slug,
+      nama: e.nama,
+      deskripsi: e.deskripsi,
+      image: e.image,
+      kategori: e.kategori ?? `Wisata Alam`,
+    }),
+    g = ae([
+      { name: `Beranda`, url: `/` },
+      { name: `Destinasi Desa`, url: `/desa/ekang-anculai` },
+      { name: e.nama, url: `/desa/${e.slug}` },
+    ]),
+    _ = async () => {
+      let t = typeof window < `u` ? window.location.href : ``;
+      try {
+        navigator.share
+          ? await navigator.share({ title: e.nama, url: t })
+          : (await navigator.clipboard.writeText(t), le.success(`Tautan profil desa disalin`));
+      } catch {}
+    };
+  return (0, B.jsxs)(`div`, {
+    className: `bg-surface pb-20 pt-20`,
+    children: [
+      (0, B.jsx)(ue, { data: [h, g] }),
+      (0, B.jsxs)(`section`, {
+        className: `relative h-[60vh] min-h-[420px] w-full overflow-hidden`,
+        children: [
+          (0, B.jsx)(`img`, {
+            src: e.galeri[s] ?? e.image,
+            alt: `Galeri ${e.nama}`,
+            width: 1600,
+            height: 1e3,
+            loading: `eager`,
+            fetchPriority: `high`,
+            decoding: `sync`,
+            className: `size-full object-cover`,
+          }),
+          (0, B.jsx)(`div`, { className: `hero-overlay absolute inset-0` }),
+          (0, B.jsxs)(`div`, {
+            className: `absolute inset-x-0 top-6 mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8`,
+            children: [
+              (0, B.jsxs)(o, {
+                to: `/`,
+                className: `inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-2 text-xs font-bold text-background backdrop-blur transition-colors hover:bg-background/35`,
+                children: [(0, B.jsx)(b, { className: `size-4` }), `Kembali ke Beranda`],
+              }),
+              (0, B.jsxs)(`div`, {
+                className: `flex gap-2`,
+                children: [
+                  (0, B.jsxs)(`button`, {
+                    onClick: () => {
+                      (f((e) => !e),
+                        le.success(d ? `Dihapus dari simpanan` : `Disimpan ke simpanan Anda`));
+                    },
+                    "aria-pressed": d,
+                    className: `inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-2 text-xs font-bold text-background backdrop-blur transition-colors hover:bg-background/35`,
+                    children: [
+                      d
+                        ? (0, B.jsx)(ye, { className: `size-4 fill-gold text-gold` })
+                        : (0, B.jsx)(ge, { className: `size-4` }),
+                      `Simpan`,
+                    ],
+                  }),
+                  (0, B.jsxs)(`button`, {
+                    onClick: () => void _(),
+                    className: `inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-2 text-xs font-bold text-background backdrop-blur transition-colors hover:bg-background/35`,
+                    children: [(0, B.jsx)(S, { className: `size-4` }), `Bagikan`],
+                  }),
+                ],
+              }),
+            ],
+          }),
+          (0, B.jsxs)(`div`, {
+            className: `absolute inset-x-0 bottom-0 mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8`,
+            children: [
+              (0, B.jsx)(`span`, {
+                className: `inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1.5 text-[11px] font-extrabold text-gold-foreground`,
+                children: e.adwi ?? n.label,
+              }),
+              (0, B.jsx)(`h1`, {
+                className: `mt-3 text-3xl font-black tracking-tight text-background sm:text-5xl`,
+                children: e.nama,
+              }),
+              (0, B.jsxs)(`p`, {
+                className: `mt-2 flex items-center gap-2 text-sm font-semibold text-background/90`,
+                children: [
+                  (0, B.jsx)(w, { className: `size-4 text-gold` }),
+                  e.kabupaten,
+                  `, `,
+                  e.provinsi,
+                ],
+              }),
+            ],
+          }),
+          (0, B.jsxs)(`div`, {
+            className: `absolute right-4 bottom-8 flex gap-2 sm:right-8`,
+            children: [
+              (0, B.jsx)(`button`, {
+                "aria-label": `Foto sebelumnya`,
+                onClick: () => c((t) => (t - 1 + e.galeri.length) % e.galeri.length),
+                className: `grid size-10 place-items-center rounded-full bg-background/20 text-background backdrop-blur hover:bg-background/35`,
+                children: (0, B.jsx)(O, { className: `size-5` }),
+              }),
+              (0, B.jsx)(`button`, {
+                "aria-label": `Foto berikutnya`,
+                onClick: () => c((t) => (t + 1) % e.galeri.length),
+                className: `grid size-10 place-items-center rounded-full bg-background/20 text-background backdrop-blur hover:bg-background/35`,
+                children: (0, B.jsx)(D, { className: `size-5` }),
+              }),
+            ],
+          }),
+        ],
+      }),
+      (0, B.jsx)(`div`, {
+        className: `relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8`,
+        children: (0, B.jsxs)(`div`, {
+          className: `-mt-8 grid gap-4 rounded-3xl border border-border bg-card p-5 sm:p-6 shadow-float sm:grid-cols-2 md:grid-cols-[repeat(3,minmax(0,1fr))_auto] md:items-center`,
+          children: [
+            (0, B.jsxs)(`div`, {
+              children: [
+                (0, B.jsx)(`p`, {
+                  className: `text-[11px] font-bold tracking-wider text-muted-foreground uppercase`,
+                  children: `Klasifikasi`,
+                }),
+                (0, B.jsx)(`span`, {
+                  className: `mt-1.5 inline-flex rounded-full px-3 py-1 text-xs font-bold ${n.badgeClass}`,
+                  children: n.label,
+                }),
+              ],
+            }),
+            (0, B.jsxs)(`div`, {
+              className: `min-w-0`,
+              children: [
+                (0, B.jsx)(`p`, {
+                  className: `text-[11px] font-bold tracking-wider text-muted-foreground uppercase`,
+                  children: `Pengelola Wisata`,
+                }),
+                (0, B.jsx)(`p`, {
+                  className: `mt-1.5 truncate text-sm font-extrabold text-foreground`,
+                  children: e.pokdarwis,
+                }),
+              ],
+            }),
+            (0, B.jsxs)(`div`, {
+              children: [
+                (0, B.jsx)(`p`, {
+                  className: `text-[11px] font-bold tracking-wider text-muted-foreground uppercase`,
+                  children: `Prestasi Resmi 2026`,
+                }),
+                (0, B.jsxs)(`p`, {
+                  className: `mt-1.5 flex items-center gap-1.5 text-xs font-extrabold text-foreground`,
+                  children: [(0, B.jsx)(se, { className: `size-4 text-gold shrink-0` }), e.adwi],
+                }),
+              ],
+            }),
+            (0, B.jsxs)(`a`, {
+              href: `https://wa.me/${e.whatsapp}?text=Halo%20Pengelola%20Desa%20Wisata%20Ekang%20Anculai,%20saya%20ingin%20tanya%20informasi%20potensi%20dan%20wisata`,
+              target: `_blank`,
+              rel: `noreferrer`,
+              className: `inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-xs font-bold text-primary-foreground transition-all duration-300 hover:bg-emerald-deep`,
+              children: [(0, B.jsx)(ne, { className: `size-4` }), `Hubungi Pengelola via WA`],
+            }),
+          ],
+        }),
+      }),
+      (0, B.jsx)(`div`, {
+        className: `mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8`,
+        children: (0, B.jsxs)(it, {
+          defaultValue: `tentang`,
+          children: [
+            (0, B.jsx)(at, {
+              className: `no-scrollbar h-auto w-full justify-start gap-1 overflow-x-auto rounded-2xl bg-card p-1.5 shadow-soft`,
+              children: [
+                [`tentang`, `Profil & Sejarah`],
+                [`fasilitas`, `Atraksi & Fasilitas`],
+                [`umkm`, `Produk UMKM 2026`],
+                [`kegiatan`, `Kegiatan Desa 2026`],
+                [`paket`, `Paket Wisata`],
+                [`galeri`, `Galeri Dokumentasi`],
+                [`peta`, `Peta & Aksesibilitas`],
+              ].map(([e, t]) =>
+                (0, B.jsx)(
+                  Q,
+                  {
+                    value: e,
+                    className: `shrink-0 rounded-full px-4 py-2.5 text-xs font-bold text-muted-foreground data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-card`,
+                    children: t,
+                  },
+                  e,
+                ),
+              ),
+            }),
+            (0, B.jsx)($, {
+              value: `tentang`,
+              className: `mt-6`,
+              children: (0, B.jsxs)(`div`, {
+                className: `grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]`,
+                children: [
+                  (0, B.jsxs)(`article`, {
+                    className: `rounded-3xl border border-border bg-card p-6 shadow-card sm:p-8`,
+                    children: [
+                      (0, B.jsx)(`h2`, {
+                        className: `text-xl font-extrabold text-foreground`,
+                        children: `Sekilas Profil Desa`,
+                      }),
+                      (0, B.jsx)(`p`, {
+                        className: `mt-3 text-sm leading-relaxed text-muted-foreground`,
+                        children: e.deskripsi,
+                      }),
+                      (0, B.jsx)(`h3`, {
+                        className: `mt-7 text-lg font-extrabold text-foreground`,
+                        children: `Sejarah & Asal Usul Nama`,
+                      }),
+                      (0, B.jsx)(`p`, {
+                        className: `mt-3 text-sm leading-relaxed text-muted-foreground`,
+                        children: e.sejarah,
+                      }),
+                      (0, B.jsx)(`div`, {
+                        className: `mt-2`,
+                        children: (0, B.jsx)(A, {
+                          source: {
+                            name: `Website Resmi Desa Ekang Anculai`,
+                            url: `https://desaekanganculai.bintankab.go.id/profil/sejarah`,
+                          },
+                        }),
+                      }),
+                      e.perbatasan
+                        ? (0, B.jsxs)(B.Fragment, {
+                            children: [
+                              (0, B.jsx)(`h3`, {
+                                className: `mt-7 text-lg font-extrabold text-foreground`,
+                                children: `Batas Wilayah & Kondisi Geografis`,
+                              }),
+                              (0, B.jsxs)(`div`, {
+                                className: `mt-3 grid gap-2.5 sm:grid-cols-2 text-xs font-medium`,
+                                children: [
+                                  (0, B.jsxs)(`div`, {
+                                    className: `rounded-2xl border border-border bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `font-bold text-primary`,
+                                        children: `Utara:`,
+                                      }),
+                                      ` `,
+                                      e.perbatasan.utara,
+                                    ],
+                                  }),
+                                  (0, B.jsxs)(`div`, {
+                                    className: `rounded-2xl border border-border bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `font-bold text-primary`,
+                                        children: `Selatan:`,
+                                      }),
+                                      ` `,
+                                      e.perbatasan.selatan,
+                                    ],
+                                  }),
+                                  (0, B.jsxs)(`div`, {
+                                    className: `rounded-2xl border border-border bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `font-bold text-primary`,
+                                        children: `Timur:`,
+                                      }),
+                                      ` `,
+                                      e.perbatasan.timur,
+                                    ],
+                                  }),
+                                  (0, B.jsxs)(`div`, {
+                                    className: `rounded-2xl border border-border bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `font-bold text-primary`,
+                                        children: `Barat:`,
+                                      }),
+                                      ` `,
+                                      e.perbatasan.barat,
+                                    ],
+                                  }),
+                                ],
+                              }),
+                              (0, B.jsx)(`div`, {
+                                className: `mt-2`,
+                                children: (0, B.jsx)(A, {
+                                  source: {
+                                    name: `Website Resmi Desa Ekang Anculai`,
+                                    url: `https://desaekanganculai.bintankab.go.id/profil/geografis`,
+                                  },
+                                }),
+                              }),
+                            ],
+                          })
+                        : null,
+                      e.kesenian?.length
+                        ? (0, B.jsxs)(B.Fragment, {
+                            children: [
+                              (0, B.jsx)(`h3`, {
+                                className: `mt-8 text-lg font-extrabold text-foreground`,
+                                children: `Sanggar & Kesenian Budaya`,
+                              }),
+                              (0, B.jsx)(`div`, {
+                                className: `mt-3.5 space-y-3`,
+                                children: e.kesenian.map((e) =>
+                                  (0, B.jsxs)(
+                                    `div`,
+                                    {
+                                      className: `flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 shadow-soft transition-colors hover:border-primary/40`,
+                                      children: [
+                                        (0, B.jsx)(`span`, {
+                                          className: `grid size-9 shrink-0 place-items-center rounded-xl bg-accent text-primary`,
+                                          children: (0, B.jsx)(k, { className: `size-4.5` }),
+                                        }),
+                                        (0, B.jsx)(`p`, {
+                                          className: `text-xs font-semibold leading-relaxed text-foreground`,
+                                          children: e,
+                                        }),
+                                      ],
+                                    },
+                                    e,
+                                  ),
+                                ),
+                              }),
+                            ],
+                          })
+                        : null,
+                      e.panduanKunjungan?.etikaKunjungan?.length
+                        ? (0, B.jsxs)(B.Fragment, {
+                            children: [
+                              (0, B.jsx)(`h3`, {
+                                className: `mt-8 text-lg font-extrabold text-foreground`,
+                                children: `Etika & Panduan Kunjungan Wisatawan`,
+                              }),
+                              (0, B.jsx)(`ul`, {
+                                className: `mt-3.5 space-y-2.5`,
+                                children: e.panduanKunjungan.etikaKunjungan.map((e) =>
+                                  (0, B.jsxs)(
+                                    `li`,
+                                    {
+                                      className: `flex items-start gap-2.5 text-xs font-semibold text-foreground`,
+                                      children: [
+                                        (0, B.jsx)(`span`, {
+                                          className: `mt-1.5 size-1.5 shrink-0 rounded-full bg-primary`,
+                                        }),
+                                        (0, B.jsx)(`span`, {
+                                          className: `leading-relaxed`,
+                                          children: e,
+                                        }),
+                                      ],
+                                    },
+                                    e,
+                                  ),
+                                ),
+                              }),
+                            ],
+                          })
+                        : null,
+                      (0, B.jsx)(`div`, {
+                        className: `mt-8 border-t border-border pt-4`,
+                        children: (0, B.jsx)(A, { source: e.source }),
+                      }),
+                    ],
+                  }),
+                  (0, B.jsxs)(`aside`, {
+                    className: `space-y-6`,
+                    children: [
+                      e.kelembagaan
+                        ? (0, B.jsxs)(`div`, {
+                            className: `rounded-3xl border border-border bg-card p-6 shadow-card`,
+                            children: [
+                              (0, B.jsx)(`h3`, {
+                                className: `text-xs font-extrabold tracking-wider text-muted-foreground uppercase`,
+                                children: `Kelembagaan & Pengelola`,
+                              }),
+                              (0, B.jsxs)(`div`, {
+                                className: `mt-4 space-y-3`,
+                                children: [
+                                  (0, B.jsxs)(`div`, {
+                                    className: `flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                        children: (0, B.jsx)(y, { className: `size-4.5` }),
+                                      }),
+                                      (0, B.jsxs)(`div`, {
+                                        className: `text-xs`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `block font-extrabold text-foreground`,
+                                            children: `BUMDes Resmi`,
+                                          }),
+                                          (0, B.jsx)(`span`, {
+                                            className: `text-muted-foreground font-medium`,
+                                            children: `BUMDes Anugrah Ekang Anculai`,
+                                          }),
+                                        ],
+                                      }),
+                                    ],
+                                  }),
+                                  (0, B.jsxs)(`div`, {
+                                    className: `flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                        children: (0, B.jsx)(ce, { className: `size-4.5` }),
+                                      }),
+                                      (0, B.jsxs)(`div`, {
+                                        className: `text-xs`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `block font-extrabold text-foreground`,
+                                            children: `Pengelola Wisata`,
+                                          }),
+                                          (0, B.jsx)(`span`, {
+                                            className: `text-muted-foreground font-medium`,
+                                            children: e.kelembagaan.pokdarwis,
+                                          }),
+                                        ],
+                                      }),
+                                    ],
+                                  }),
+                                  (0, B.jsxs)(`div`, {
+                                    className: `flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                        children: (0, B.jsx)(k, { className: `size-4.5` }),
+                                      }),
+                                      (0, B.jsxs)(`div`, {
+                                        className: `text-xs`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `block font-extrabold text-foreground`,
+                                            children: `Sanggar Budaya`,
+                                          }),
+                                          (0, B.jsx)(`span`, {
+                                            className: `text-muted-foreground font-medium`,
+                                            children: e.kelembagaan.sanggar,
+                                          }),
+                                        ],
+                                      }),
+                                    ],
+                                  }),
+                                  (0, B.jsxs)(`div`, {
+                                    className: `flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                        children: (0, B.jsx)(ve, { className: `size-4.5` }),
+                                      }),
+                                      (0, B.jsxs)(`div`, {
+                                        className: `text-xs`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `block font-extrabold text-foreground`,
+                                            children: `Kemitraan Instansi`,
+                                          }),
+                                          (0, B.jsx)(`span`, {
+                                            className: `text-muted-foreground font-medium`,
+                                            children: e.kelembagaan.mitra,
+                                          }),
+                                        ],
+                                      }),
+                                    ],
+                                  }),
+                                ],
+                              }),
+                            ],
+                          })
+                        : null,
+                      e.alamat
+                        ? (0, B.jsxs)(`div`, {
+                            className: `rounded-3xl border border-border bg-card p-6 shadow-card`,
+                            children: [
+                              (0, B.jsx)(`h3`, {
+                                className: `text-xs font-extrabold tracking-wider text-muted-foreground uppercase`,
+                                children: `Informasi Kontak & Akses`,
+                              }),
+                              (0, B.jsxs)(`div`, {
+                                className: `mt-4 space-y-3`,
+                                children: [
+                                  (0, B.jsxs)(`div`, {
+                                    className: `flex items-start gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                    children: [
+                                      (0, B.jsx)(`span`, {
+                                        className: `grid size-9 shrink-0 place-items-center rounded-xl bg-gold/15 text-gold`,
+                                        children: (0, B.jsx)(w, { className: `size-4.5` }),
+                                      }),
+                                      (0, B.jsxs)(`div`, {
+                                        className: `text-xs min-w-0`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `block font-extrabold text-foreground`,
+                                            children: `Alamat Kantor & Wilayah`,
+                                          }),
+                                          (0, B.jsx)(`span`, {
+                                            className: `text-muted-foreground font-medium leading-relaxed`,
+                                            children: e.alamat,
+                                          }),
+                                        ],
+                                      }),
+                                    ],
+                                  }),
+                                  e.luasDesa
+                                    ? (0, B.jsxs)(`div`, {
+                                        className: `flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                            children: (0, B.jsx)(be, { className: `size-4.5` }),
+                                          }),
+                                          (0, B.jsxs)(`div`, {
+                                            className: `text-xs`,
+                                            children: [
+                                              (0, B.jsx)(`span`, {
+                                                className: `block font-extrabold text-foreground`,
+                                                children: `Luas Wilayah Desa`,
+                                              }),
+                                              (0, B.jsx)(`span`, {
+                                                className: `text-muted-foreground font-medium`,
+                                                children: e.luasDesa,
+                                              }),
+                                            ],
+                                          }),
+                                        ],
+                                      })
+                                    : null,
+                                  e.luasKawasanWisata
+                                    ? (0, B.jsxs)(`div`, {
+                                        className: `flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                            children: (0, B.jsx)(ie, { className: `size-4.5` }),
+                                          }),
+                                          (0, B.jsxs)(`div`, {
+                                            className: `text-xs`,
+                                            children: [
+                                              (0, B.jsx)(`span`, {
+                                                className: `block font-extrabold text-foreground`,
+                                                children: `Kawasan Wisata`,
+                                              }),
+                                              (0, B.jsx)(`span`, {
+                                                className: `text-muted-foreground font-medium`,
+                                                children: e.luasKawasanWisata,
+                                              }),
+                                            ],
+                                          }),
+                                        ],
+                                      })
+                                    : null,
+                                  e.jamOperasional
+                                    ? (0, B.jsxs)(`div`, {
+                                        className: `flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                            children: (0, B.jsx)(oe, { className: `size-4.5` }),
+                                          }),
+                                          (0, B.jsxs)(`div`, {
+                                            className: `text-xs`,
+                                            children: [
+                                              (0, B.jsx)(`span`, {
+                                                className: `block font-extrabold text-foreground`,
+                                                children: `Jam Operasional`,
+                                              }),
+                                              (0, B.jsx)(`span`, {
+                                                className: `text-muted-foreground font-medium`,
+                                                children: e.jamOperasional,
+                                              }),
+                                            ],
+                                          }),
+                                        ],
+                                      })
+                                    : null,
+                                  e.waktuTerbaik
+                                    ? (0, B.jsxs)(`div`, {
+                                        className: `flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `grid size-9 shrink-0 place-items-center rounded-xl bg-amber-500/10 text-amber-600`,
+                                            children: (0, B.jsx)(re, { className: `size-4.5` }),
+                                          }),
+                                          (0, B.jsxs)(`div`, {
+                                            className: `text-xs`,
+                                            children: [
+                                              (0, B.jsx)(`span`, {
+                                                className: `block font-extrabold text-foreground`,
+                                                children: `Waktu Kunjungan Terbaik`,
+                                              }),
+                                              (0, B.jsx)(`span`, {
+                                                className: `text-muted-foreground font-medium`,
+                                                children: e.waktuTerbaik,
+                                              }),
+                                            ],
+                                          }),
+                                        ],
+                                      })
+                                    : null,
+                                  e.instagram
+                                    ? (0, B.jsxs)(`div`, {
+                                        className: `flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                            children: (0, B.jsx)(ee, { className: `size-4.5` }),
+                                          }),
+                                          (0, B.jsxs)(`div`, {
+                                            className: `text-xs truncate`,
+                                            children: [
+                                              (0, B.jsx)(`span`, {
+                                                className: `block font-extrabold text-foreground`,
+                                                children: `Instagram Resmi`,
+                                              }),
+                                              (0, B.jsx)(`span`, {
+                                                className: `text-muted-foreground font-medium`,
+                                                children: e.instagram,
+                                              }),
+                                            ],
+                                          }),
+                                        ],
+                                      })
+                                    : null,
+                                  e.website
+                                    ? (0, B.jsxs)(`div`, {
+                                        className: `flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                            children: (0, B.jsx)(M, { className: `size-4.5` }),
+                                          }),
+                                          (0, B.jsxs)(`div`, {
+                                            className: `text-xs truncate`,
+                                            children: [
+                                              (0, B.jsx)(`span`, {
+                                                className: `block font-extrabold text-foreground`,
+                                                children: `Website Wisata`,
+                                              }),
+                                              (0, B.jsx)(`a`, {
+                                                href: `https://${e.website}`,
+                                                target: `_blank`,
+                                                rel: `noreferrer`,
+                                                className: `text-primary font-bold hover:underline`,
+                                                children: e.website,
+                                              }),
+                                            ],
+                                          }),
+                                        ],
+                                      })
+                                    : null,
+                                  e.pemdesWebsite
+                                    ? (0, B.jsxs)(`div`, {
+                                        className: `flex items-center gap-3 rounded-2xl border border-border/70 bg-surface p-3.5`,
+                                        children: [
+                                          (0, B.jsx)(`span`, {
+                                            className: `grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary`,
+                                            children: (0, B.jsx)(_e, { className: `size-4.5` }),
+                                          }),
+                                          (0, B.jsxs)(`div`, {
+                                            className: `text-xs truncate`,
+                                            children: [
+                                              (0, B.jsx)(`span`, {
+                                                className: `block font-extrabold text-foreground`,
+                                                children: `Portal Resmi Pemdes`,
+                                              }),
+                                              (0, B.jsx)(`a`, {
+                                                href: e.pemdesWebsite,
+                                                target: `_blank`,
+                                                rel: `noreferrer`,
+                                                className: `text-primary font-bold hover:underline truncate block`,
+                                                children: e.pemdesWebsite,
+                                              }),
+                                            ],
+                                          }),
+                                        ],
+                                      })
+                                    : null,
+                                ],
+                              }),
+                            ],
+                          })
+                        : null,
+                    ],
+                  }),
+                ],
+              }),
+            }),
+            (0, B.jsx)($, {
+              value: `fasilitas`,
+              className: `mt-6`,
+              children: (0, B.jsxs)(`div`, {
+                className: `rounded-3xl border border-border bg-card p-6 shadow-card sm:p-8`,
+                children: [
+                  (0, B.jsx)(`h2`, {
+                    className: `text-xl font-extrabold text-foreground`,
+                    children: `Fasilitas Tersedia`,
+                  }),
+                  (0, B.jsx)(`div`, {
+                    className: `mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4`,
+                    children: e.fasilitas.map((e) => {
+                      let t = st[e] ?? M;
+                      return (0, B.jsxs)(
+                        `div`,
+                        {
+                          className: `card-lift rounded-2xl border border-border bg-surface p-5 text-center`,
+                          children: [
+                            (0, B.jsx)(`span`, {
+                              className: `mx-auto grid size-12 place-items-center rounded-full bg-accent text-primary`,
+                              children: (0, B.jsx)(t, { className: `size-5` }),
+                            }),
+                            (0, B.jsx)(`p`, {
+                              className: `mt-3 text-xs font-bold text-foreground`,
+                              children: e,
+                            }),
+                          ],
+                        },
+                        e,
+                      );
+                    }),
+                  }),
+                ],
+              }),
+            }),
+            (0, B.jsxs)($, {
+              value: `umkm`,
+              className: `mt-6 space-y-6`,
+              children: [
+                (0, B.jsx)(`div`, {
+                  className: `flex flex-wrap items-center gap-2 pb-1`,
+                  children: [
+                    { id: `Semua`, label: `Semua Kategori`, icon: `✨` },
+                    { id: `Kuliner & Olahan Pangan`, label: `Kuliner & Olahan Pangan`, icon: `🍲` },
+                    { id: `Kerajinan & Produk Khas`, label: `Kerajinan & Produk Khas`, icon: `🎨` },
+                    {
+                      id: `Oleh-oleh & Produk Kreatif`,
+                      label: `Oleh-oleh & Produk Kreatif`,
+                      icon: `🎁`,
+                    },
+                  ].map((e) =>
+                    (0, B.jsxs)(
+                      `button`,
+                      {
+                        onClick: () => m(e.id),
+                        className: `inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer ${p === e.id ? `bg-primary text-primary-foreground shadow-card` : `bg-card border border-border text-muted-foreground hover:text-foreground hover:border-primary/40`}`,
+                        children: [
+                          (0, B.jsx)(`span`, { children: e.icon }),
+                          (0, B.jsx)(`span`, { children: e.label }),
+                        ],
+                      },
+                      e.id,
+                    ),
+                  ),
+                }),
+                (0, B.jsx)(`div`, {
+                  className: `grid gap-6 sm:grid-cols-2 lg:grid-cols-3`,
+                  children: (t?.umkmList && t.umkmList.length > 0 ? t.umkmList : (e.umkmList ?? []))
+                    .filter((e) => p === `Semua` || e.kategori === p)
+                    .map((e) =>
+                      (0, B.jsxs)(
+                        `div`,
+                        {
+                          className: `card-lift flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-card`,
+                          children: [
+                            (0, B.jsxs)(`div`, {
+                              children: [
+                                e.image &&
+                                  (0, B.jsx)(`img`, {
+                                    src: e.image,
+                                    alt: e.nama,
+                                    className: `aspect-video w-full rounded-2xl object-cover`,
+                                  }),
+                                (0, B.jsxs)(`div`, {
+                                  className: `mt-3 flex items-center justify-between gap-2`,
+                                  children: [
+                                    (0, B.jsx)(`span`, {
+                                      className: `inline-block rounded-full bg-emerald-500/10 px-3 py-1 text-[11px] font-extrabold text-emerald-700 dark:text-emerald-300`,
+                                      children: e.kategori,
+                                    }),
+                                    e.hargaInfo &&
+                                      (0, B.jsx)(`span`, {
+                                        className: `text-xs font-bold text-foreground font-mono`,
+                                        children: e.hargaInfo,
+                                      }),
+                                  ],
+                                }),
+                                (0, B.jsx)(`h3`, {
+                                  className: `mt-2 text-base font-extrabold text-foreground`,
+                                  children: e.nama,
+                                }),
+                                (0, B.jsx)(`p`, {
+                                  className: `mt-2 text-xs font-medium leading-relaxed text-muted-foreground`,
+                                  children: e.deskripsi,
+                                }),
+                              ],
+                            }),
+                            (0, B.jsx)(`div`, {
+                              className: `mt-4 pt-3 border-t border-border/60`,
+                              children: (0, B.jsx)(A, { source: e.source }),
+                            }),
+                          ],
+                        },
+                        e.id,
+                      ),
+                    ),
+                }),
+              ],
+            }),
+            (0, B.jsx)($, {
+              value: `kegiatan`,
+              className: `mt-6`,
+              children: (0, B.jsx)(`div`, {
+                className: `grid gap-6 md:grid-cols-2`,
+                children: (t?.kegiatanList === void 0
+                  ? (e.kegiatanList ?? [])
+                  : t.kegiatanList
+                ).map((e) =>
+                  (0, B.jsxs)(
+                    `div`,
+                    {
+                      className: `card-lift flex flex-col justify-between rounded-3xl border border-border bg-card p-6 shadow-card`,
+                      children: [
+                        (0, B.jsxs)(`div`, {
+                          children: [
+                            (0, B.jsx)(`span`, {
+                              className: `text-xs font-bold text-primary`,
+                              children: e.tanggal,
+                            }),
+                            (0, B.jsx)(`h3`, {
+                              className: `mt-1 text-lg font-extrabold text-foreground`,
+                              children: e.judul,
+                            }),
+                            (0, B.jsx)(`p`, {
+                              className: `mt-2 text-xs leading-relaxed text-muted-foreground`,
+                              children: e.deskripsi,
+                            }),
+                          ],
+                        }),
+                        (0, B.jsx)(A, { source: e.source }),
+                      ],
+                    },
+                    e.id,
+                  ),
+                ),
+              }),
+            }),
+            (0, B.jsx)($, {
+              value: `paket`,
+              className: `mt-6`,
+              children: (0, B.jsx)(`div`, {
+                className: `grid gap-6 sm:grid-cols-2 lg:grid-cols-3`,
+                children: e.paket.map((e) =>
+                  (0, B.jsxs)(
+                    `div`,
+                    {
+                      className: `card-lift flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-card group hover:border-primary/50 transition-all`,
+                      children: [
+                        (0, B.jsxs)(`div`, {
+                          children: [
+                            (0, B.jsxs)(`div`, {
+                              className: `relative aspect-video w-full overflow-hidden rounded-2xl bg-muted`,
+                              children: [
+                                (0, B.jsx)(`img`, {
+                                  src: e.image,
+                                  alt: e.nama,
+                                  className: `size-full object-cover transition-transform duration-500 group-hover:scale-105`,
+                                }),
+                                (0, B.jsx)(`span`, {
+                                  className: `absolute top-2.5 right-2.5 rounded-full bg-black/60 backdrop-blur px-3 py-1 text-[10px] font-black text-white uppercase`,
+                                  children: `Paket Resmi Desa`,
+                                }),
+                              ],
+                            }),
+                            (0, B.jsx)(`h3`, {
+                              className: `mt-4 text-base font-extrabold text-foreground`,
+                              children: e.nama,
+                            }),
+                            (0, B.jsx)(`p`, {
+                              className: `mt-2 text-xs text-muted-foreground leading-relaxed font-medium`,
+                              children: e.highlight,
+                            }),
+                          ],
+                        }),
+                        (0, B.jsxs)(`div`, {
+                          className: `mt-4 pt-3 border-t border-border/60 flex items-center justify-between`,
+                          children: [
+                            (0, B.jsxs)(`div`, {
+                              children: [
+                                (0, B.jsx)(`p`, {
+                                  className: `text-[10px] uppercase font-bold text-muted-foreground`,
+                                  children: `Keterangan Biaya`,
+                                }),
+                                (0, B.jsx)(`p`, {
+                                  className: `text-sm font-black text-primary`,
+                                  children: e.hargaText,
+                                }),
+                              ],
+                            }),
+                            (0, B.jsxs)(o, {
+                              to: `/rencanakan-kunjungan`,
+                              className: `inline-flex items-center gap-1 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-bold text-primary hover:bg-primary hover:text-primary-foreground transition-all`,
+                              children: [
+                                (0, B.jsx)(`span`, { children: `Lihat Rute` }),
+                                (0, B.jsx)(me, { className: `size-3` }),
+                              ],
+                            }),
+                          ],
+                        }),
+                        (0, B.jsx)(`div`, {
+                          className: `mt-2`,
+                          children: (0, B.jsx)(A, { source: e.source }),
+                        }),
+                      ],
+                    },
+                    e.id,
+                  ),
+                ),
+              }),
+            }),
+            (0, B.jsx)($, {
+              value: `galeri`,
+              className: `mt-6`,
+              children: (0, B.jsx)(`div`, {
+                className: `grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4`,
+                children: e.galeri.map((e, t) =>
+                  (0, B.jsxs)(
+                    `button`,
+                    {
+                      onClick: () => u(e),
+                      className: `group relative aspect-square overflow-hidden rounded-2xl border border-border`,
+                      children: [
+                        (0, B.jsx)(`img`, {
+                          src: e,
+                          alt: `Galeri ${t + 1}`,
+                          className: `size-full object-cover transition-transform group-hover:scale-105`,
+                        }),
+                        (0, B.jsx)(`span`, {
+                          className: `absolute inset-0 grid place-items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity text-white`,
+                          children: (0, B.jsx)(E, { className: `size-6` }),
+                        }),
+                      ],
+                    },
+                    t,
+                  ),
+                ),
+              }),
+            }),
+            (0, B.jsx)($, {
+              value: `peta`,
+              className: `mt-6`,
+              children: (0, B.jsx)(`div`, {
+                className: `min-h-[460px] overflow-hidden rounded-3xl border border-border shadow-card`,
+                children: (0, B.jsx)(N.Suspense, {
+                  fallback: (0, B.jsx)(`div`, {
+                    className: `p-12 text-center text-xs`,
+                    children: `Memuat peta...`,
+                  }),
+                  children: (0, B.jsx)(ot, { items: [e], landmarks: t.landmarkList }),
+                }),
+              }),
+            }),
+          ],
+        }),
+      }),
+      l &&
+        (0, B.jsx)(r, {
+          open: !!l,
+          onOpenChange: () => u(null),
+          children: (0, B.jsx)(i, {
+            className: `max-w-4xl p-0 overflow-hidden bg-black border-0`,
+            children: (0, B.jsx)(`img`, {
+              src: l,
+              alt: `Enlarged`,
+              className: `w-full h-auto max-h-[85vh] object-contain`,
+            }),
+          }),
+        }),
+    ],
+  });
+}
+export { ct as component };

@@ -63,6 +63,11 @@ export function generateSitemapXml(): string {
 
 export function writeSitemapFile(): void {
   try {
+    const isServerless = Boolean(
+      process.env["VERCEL"] || process.env["AWS_LAMBDA_FUNCTION_NAME"] || process.env["NETLIFY"],
+    );
+    if (isServerless) return;
+
     const xmlContent = generateSitemapXml();
     const publicDir = path.join(process.cwd(), "public");
     if (!fs.existsSync(publicDir)) {

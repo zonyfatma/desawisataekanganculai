@@ -13,17 +13,46 @@ import {
 } from "../data/jadesta";
 import { writeSitemapFile } from "./sitemap-generator";
 
-const dataDir = path.join(process.cwd(), "data");
-if (!fs.existsSync(dataDir)) {
-  fs.mkdirSync(dataDir, { recursive: true });
+let _dbInstance: InstanceType<typeof Database> | null = null;
+
+function getDbInstance(): InstanceType<typeof Database> {
+  if (_dbInstance) return _dbInstance;
+
+  const isServerless = Boolean(
+    process.env["VERCEL"] || process.env["AWS_LAMBDA_FUNCTION_NAME"] || process.env["NETLIFY"],
+  );
+  const baseDir = isServerless ? "/tmp" : process.cwd();
+  const dataDir = path.join(baseDir, "data");
+
+  try {
+    if (!fs.existsSync(dataDir)) {
+      fs.mkdirSync(dataDir, { recursive: true });
+    }
+  } catch {
+    // Ignore directory creation error in read-only environments
+  }
+
+  const dbPath = path.join(dataDir, "ekang_anculai.db");
+  try {
+    _dbInstance = new Database(dbPath);
+    _dbInstance.pragma("journal_mode = WAL");
+    _dbInstance.pragma("foreign_keys = ON");
+  } catch {
+    _dbInstance = new Database(":memory:");
+  }
+
+  return _dbInstance;
 }
 
-const dbPath = path.join(dataDir, "ekang_anculai.db");
-export const db = new Database(dbPath);
-
-// Enable WAL mode & foreign keys
-db.pragma("journal_mode = WAL");
-db.pragma("foreign_keys = ON");
+export const db = new Proxy({} as InstanceType<typeof Database>, {
+  get(_target, prop) {
+    const instance = getDbInstance();
+    const val = (instance as unknown as Record<string, unknown>)[prop as string];
+    return typeof val === "function"
+      ? (val as (...args: unknown[]) => unknown).bind(instance)
+      : val;
+  },
+});
 
 export function initDatabase() {
   // 1. Users Table
@@ -540,5 +569,16 @@ function seedDefaultData() {
   }
 }
 
-// Automatically initialize database
-initDatabase();
+// Automatically initialize SQLite database only in SQLite mode or local development
+const isServerlessProd = Boolean(
+  process.env["VERCEL"] || process.env["AWS_LAMBDA_FUNCTION_NAME"] || process.env["NETLIFY"],
+);
+const dbMode = process.env["DATABASE_MODE"]?.toLowerCase()?.trim();
+
+if (!isServerlessProd || dbMode === "sqlite") {
+  try {
+    initDatabase();
+  } catch (err) {
+    console.warn("SQLite auto-init bypassed:", err);
+  }
+}

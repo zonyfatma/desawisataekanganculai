@@ -1,1 +1,27 @@
-import{t as e}from"./jsx-runtime-D1ym7qjA.js";import{t}from"./link-C7I64epB.js";var n=e();function r(){return(0,n.jsx)(`div`,{className:`grid min-h-[70vh] place-items-center bg-surface px-4 pt-28`,children:(0,n.jsxs)(`div`,{className:`text-center max-w-md`,children:[(0,n.jsx)(`h1`,{className:`text-2xl font-extrabold text-foreground`,children:`Profil Desa Tidak Ditemukan`}),(0,n.jsx)(`p`,{className:`mt-2 text-sm text-muted-foreground`,children:`Halaman yang Anda cari tidak tersedia atau telah dipindahkan.`}),(0,n.jsx)(t,{to:`/`,className:`mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground`,children:`Kembali ke Beranda`})]})})}export{r as notFoundComponent};
+import { t as e } from "./jsx-runtime-D1ym7qjA.js";
+import { t } from "./link-C7I64epB.js";
+var n = e();
+function r() {
+  return (0, n.jsx)(`div`, {
+    className: `grid min-h-[70vh] place-items-center bg-surface px-4 pt-28`,
+    children: (0, n.jsxs)(`div`, {
+      className: `text-center max-w-md`,
+      children: [
+        (0, n.jsx)(`h1`, {
+          className: `text-2xl font-extrabold text-foreground`,
+          children: `Profil Desa Tidak Ditemukan`,
+        }),
+        (0, n.jsx)(`p`, {
+          className: `mt-2 text-sm text-muted-foreground`,
+          children: `Halaman yang Anda cari tidak tersedia atau telah dipindahkan.`,
+        }),
+        (0, n.jsx)(t, {
+          to: `/`,
+          className: `mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground`,
+          children: `Kembali ke Beranda`,
+        }),
+      ],
+    }),
+  });
+}
+export { r as notFoundComponent };

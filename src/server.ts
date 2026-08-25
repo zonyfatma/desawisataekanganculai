@@ -8,15 +8,23 @@ import { sanitizeErrorMessage } from "./lib/error-sanitizer";
 
 function logServerError(context: string, err: unknown) {
   try {
-    const logPath = path.join(process.cwd(), "data", "server-error.log");
-    const msg = `[${new Date().toISOString()}] ${context}: ${
-      err instanceof Error ? `${err.name}: ${err.message}\n${err.stack}` : String(err)
-    }\n`;
-    fs.appendFileSync(logPath, msg);
-    console.error(`[SERVER ERROR] ${context}:`, err);
-  } catch (e) {
-    console.error("Failed to write to log file:", e);
+    const isServerless = Boolean(
+      process.env["VERCEL"] || process.env["AWS_LAMBDA_FUNCTION_NAME"] || process.env["NETLIFY"],
+    );
+    if (!isServerless) {
+      const dataDir = path.join(process.cwd(), "data");
+      if (fs.existsSync(dataDir)) {
+        const logPath = path.join(dataDir, "server-error.log");
+        const msg = `[${new Date().toISOString()}] ${context}: ${
+          err instanceof Error ? `${err.name}: ${err.message}\n${err.stack}` : String(err)
+        }\n`;
+        fs.appendFileSync(logPath, msg);
+      }
+    }
+  } catch {
+    // Ignore filesystem log errors in restricted environments
   }
+  console.error(`[SERVER ERROR] ${context}:`, err);
 }
 
 type ServerEntry = {
