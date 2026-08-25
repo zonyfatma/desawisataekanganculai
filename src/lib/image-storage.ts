@@ -3,6 +3,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import sharp from "sharp";
 import { db } from "./db";
+import { getSupabaseAdminClient, isSupabaseAdminConfigured } from "./supabase-admin.server";
 
 export type ImageCategory =
   "destinations" | "packages" | "umkm" | "homestays" | "kegiatan" | "galleries" | "news";
@@ -226,16 +227,68 @@ export async function saveAndOptimizeImage(
   const randomSuffix = crypto.randomBytes(8).toString("hex");
   const uniqueFileName = `img-${safeCategory}-${Date.now()}-${randomSuffix}.webp`;
 
+  // 5. Re-encode ke WebP murni & bersihkan seluruh metadata EXIF
+  const isServerless = Boolean(
+    process.env["VERCEL"] || process.env["AWS_LAMBDA_FUNCTION_NAME"] || process.env["NETLIFY"],
+  );
+  const mode = process.env["DATABASE_MODE"]?.toLowerCase()?.trim();
+  const useSupabaseStorage = mode === "supabase" || (isServerless && isSupabaseAdminConfigured());
+
+  if (useSupabaseStorage && isSupabaseAdminConfigured()) {
+    const webpBuffer = await sharpInstance
+      .resize(1920, 1920, {
+        fit: "inside",
+        withoutEnlargement: true,
+      })
+      .withMetadata({ orientation: 1 }) // Reset orientasi EXIF & hapus metadata GPS/privasi lainnya
+      .webp({ quality: 82, effort: 4 })
+      .toBuffer();
+
+    try {
+      const supabase = getSupabaseAdminClient();
+      const storagePath = `${safeCategory}/${uniqueFileName}`;
+
+      let { error: uploadError } = await supabase.storage
+        .from("uploads")
+        .upload(storagePath, webpBuffer, {
+          contentType: "image/webp",
+          upsert: true,
+        });
+
+      if (
+        uploadError &&
+        (uploadError.message.includes("not found") || uploadError.message.includes("Bucket"))
+      ) {
+        await supabase.storage.createBucket("uploads", { public: true });
+        const retry = await supabase.storage.from("uploads").upload(storagePath, webpBuffer, {
+          contentType: "image/webp",
+          upsert: true,
+        });
+        uploadError = retry.error;
+      }
+
+      if (!uploadError) {
+        const { data: publicUrlData } = supabase.storage.from("uploads").getPublicUrl(storagePath);
+        return publicUrlData.publicUrl;
+      }
+    } catch (e) {
+      console.warn("Supabase storage upload fallback:", e);
+    }
+
+    return `data:image/webp;base64,${webpBuffer.toString("base64")}`;
+  }
+
+  // Local filesystem storage for local development
+  initUploadDirectories();
   const targetDir = path.join(PUBLIC_UPLOADS_DIR, safeCategory);
   const targetFilePath = path.join(targetDir, uniqueFileName);
 
-  // 5. Re-encode ke WebP murni & bersihkan seluruh metadata EXIF
   await sharpInstance
     .resize(1920, 1920, {
       fit: "inside",
       withoutEnlargement: true,
     })
-    .withMetadata({ orientation: 1 }) // Reset orientasi EXIF & hapus metadata GPS/privasi lainnya
+    .withMetadata({ orientation: 1 })
     .webp({ quality: 82, effort: 4 })
     .toFile(targetFilePath);
 
