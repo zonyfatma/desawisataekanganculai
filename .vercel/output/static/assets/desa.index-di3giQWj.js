@@ -2611,18 +2611,16 @@ function Xr({ village: e, priority: t = !1 }) {
               (0, X.jsxs)(`div`, {
                 className: `mt-4 flex flex-wrap gap-1.5`,
                 children: [
-                  e.fasilitas
-                    .slice(0, 3)
-                    .map((e) =>
-                      (0, X.jsx)(
-                        `span`,
-                        {
-                          className: `rounded-full bg-surface px-2.5 py-1 text-[11px] font-semibold text-muted-foreground border border-border/60`,
-                          children: e,
-                        },
-                        e,
-                      ),
+                  e.fasilitas.slice(0, 3).map((e) =>
+                    (0, X.jsx)(
+                      `span`,
+                      {
+                        className: `rounded-full bg-surface px-2.5 py-1 text-[11px] font-semibold text-muted-foreground border border-border/60`,
+                        children: e,
+                      },
+                      e,
                     ),
+                  ),
                   e.fasilitas.length > 3
                     ? (0, X.jsxs)(`span`, {
                         className: `rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-bold text-primary`,

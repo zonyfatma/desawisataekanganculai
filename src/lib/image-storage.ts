@@ -26,19 +26,34 @@ const MAX_PIXELS_LIMIT = 50_000_000; // 50 Megapixels
 const PUBLIC_UPLOADS_DIR = path.join(process.cwd(), "public", "uploads");
 
 export function initUploadDirectories() {
-  if (!fs.existsSync(PUBLIC_UPLOADS_DIR)) {
-    fs.mkdirSync(PUBLIC_UPLOADS_DIR, { recursive: true });
-  }
-  for (const cat of ALLOWED_CATEGORIES) {
-    const catDir = path.join(PUBLIC_UPLOADS_DIR, cat);
-    if (!fs.existsSync(catDir)) {
-      fs.mkdirSync(catDir, { recursive: true });
+  const isServerless = Boolean(
+    process.env["VERCEL"] || process.env["AWS_LAMBDA_FUNCTION_NAME"] || process.env["NETLIFY"],
+  );
+  if (isServerless) return;
+
+  try {
+    if (!fs.existsSync(PUBLIC_UPLOADS_DIR)) {
+      fs.mkdirSync(PUBLIC_UPLOADS_DIR, { recursive: true });
     }
+    for (const cat of ALLOWED_CATEGORIES) {
+      const catDir = path.join(PUBLIC_UPLOADS_DIR, cat);
+      if (!fs.existsSync(catDir)) {
+        fs.mkdirSync(catDir, { recursive: true });
+      }
+    }
+  } catch {
+    // Ignore directory creation in read-only environments
   }
 }
 
-// Ensure upload directories exist on startup
-initUploadDirectories();
+// Automatically initialize only in non-serverless local dev
+if (!process.env["VERCEL"] && !process.env["AWS_LAMBDA_FUNCTION_NAME"]) {
+  try {
+    initUploadDirectories();
+  } catch {
+    // Silent
+  }
+}
 
 /**
  * Validasi ketat buffer gambar:

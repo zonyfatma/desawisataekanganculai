@@ -23392,16 +23392,14 @@ var Nc = class extends U {
           );
         return { status: t.value, value: a };
       } else
-        return this._def.schema
-          ._parseAsync({ data: n.data, path: n.path, parent: n })
-          .then((e) =>
-            Ds(e)
-              ? Promise.resolve(r.transform(e.value, i)).then((e) => ({
-                  status: t.value,
-                  value: e,
-                }))
-              : B,
-          );
+        return this._def.schema._parseAsync({ data: n.data, path: n.path, parent: n }).then((e) =>
+          Ds(e)
+            ? Promise.resolve(r.transform(e.value, i)).then((e) => ({
+                status: t.value,
+                value: e,
+              }))
+            : B,
+        );
     I.assertNever(r);
   }
 };
