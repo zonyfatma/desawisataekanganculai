@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin } from "lucide-react";
 import { klasifikasiInfo, type Village } from "@/data/jadesta";
+import { resolveImageUrl } from "@/lib/image-resolver";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SourceLink } from "./SourceLink";
 
@@ -18,11 +19,14 @@ export function VillageCard({
       <div>
         <div className="relative aspect-[4/3] overflow-hidden">
           <img
-            src={village.image}
+            src={resolveImageUrl(village.image, village.nama)}
             alt={`Pemandangan ${village.nama} di ${village.kabupaten}`}
             width={1600}
             height={1000}
             loading={priority ? "eager" : "lazy"}
+            onError={(e) => {
+              e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+            }}
             className="size-full object-cover transition-transform duration-700 group-hover:scale-108"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />

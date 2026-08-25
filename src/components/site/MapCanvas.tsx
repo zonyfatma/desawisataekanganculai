@@ -9,6 +9,7 @@ import {
   type Village,
   type LandmarkItem,
 } from "@/data/jadesta";
+import { resolveImageUrl } from "@/lib/image-resolver";
 import {
   Navigation,
   ExternalLink,
@@ -579,9 +580,12 @@ export default function MapCanvas({ items, focusCoords: initialFocus, landmarks 
                 {village.image && (
                   <div className="relative h-28 w-full overflow-hidden bg-neutral-100">
                     <img
-                      src={village.image}
+                      src={resolveImageUrl(village.image, village.nama)}
                       alt={village.nama}
                       loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                      }}
                       className="h-full w-full object-cover"
                       width={600}
                       height={340}
@@ -641,9 +645,12 @@ export default function MapCanvas({ items, focusCoords: initialFocus, landmarks 
                   {lm.image && (
                     <div className="relative h-28 w-full overflow-hidden bg-neutral-100">
                       <img
-                        src={lm.image}
+                        src={resolveImageUrl(lm.image, lm.nama)}
                         alt={lm.nama}
                         loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                        }}
                         className="h-full w-full object-cover"
                         width={500}
                         height={280}

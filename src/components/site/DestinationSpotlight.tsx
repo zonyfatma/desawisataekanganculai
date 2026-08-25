@@ -18,6 +18,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { SourceLink } from "./SourceLink";
 import { useSiteData } from "@/lib/cms-store";
 import { RUMAH_BATIK_URL } from "@/data/jadesta";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import kegiatanBatik2 from "@/assets/kegiatan-batik-2.jpg";
 import ekangMangroveDermaga from "@/assets/ekang-mangrove-dermaga.jpg";
 import tekoKayangan from "@/assets/teko-kayangan.jpg";
@@ -207,7 +208,7 @@ export function DestinationSpotlight() {
               judul: lm.nama || matched.judul,
               shortDesc: lm.deskripsi || matched.shortDesc,
               fullDesc: lm.deskripsi || matched.fullDesc,
-              image: lm.image || matched.image,
+              image: resolveImageUrl(lm.image || matched.image, lm.nama || matched.judul),
               source: (lm.source as { name: string; url: string }) || matched.source,
             };
           }
@@ -219,7 +220,7 @@ export function DestinationSpotlight() {
             badgeStatus: "TERKONFIRMASI" as const,
             badgeText: "Destinasi Terkonfirmasi",
             icon: Trees,
-            image: lm.image || kegiatanBatik2,
+            image: resolveImageUrl(lm.image, lm.nama || lm.kategori),
             shortDesc: lm.deskripsi || "",
             fullDesc: lm.deskripsi || "",
             highlights: [lm.nama, lm.kategori],
@@ -373,12 +374,15 @@ export function DestinationSpotlight() {
                   <div>
                     <div className="relative aspect-[4/3] w-full overflow-hidden">
                       <img
-                        src={item.image}
+                        src={resolveImageUrl(item.image, item.judul)}
                         alt={item.judul}
                         width={800}
                         height={600}
                         loading="lazy"
                         decoding="async"
+                        onError={(e) => {
+                          e.currentTarget.src = getImageFallback(item.judul, item.kategori);
+                        }}
                         className="size-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="hero-overlay absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />

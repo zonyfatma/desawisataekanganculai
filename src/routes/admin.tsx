@@ -55,6 +55,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import logoBintan from "@/assets/logo-bintan.png";
+import { resolveImageUrl } from "@/lib/image-resolver";
 
 import {
   getSiteDataServerFn,
@@ -1967,8 +1968,11 @@ function AdminDashboardPage() {
                   {kg.image && (
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-muted border-b border-border">
                       <img
-                        src={kg.image}
+                        src={resolveImageUrl(kg.image, kg.judul)}
                         alt={kg.judul}
+                        onError={(e) => {
+                          e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                        }}
                         className="size-full object-cover transition-transform group-hover:scale-105"
                       />
                     </div>
@@ -2066,8 +2070,11 @@ function AdminDashboardPage() {
                   {lm.image && (
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-muted border-b border-border">
                       <img
-                        src={lm.image}
+                        src={resolveImageUrl(lm.image, lm.nama)}
                         alt={lm.nama}
+                        onError={(e) => {
+                          e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                        }}
                         className="size-full object-cover transition-transform group-hover:scale-105"
                       />
                     </div>
@@ -2162,8 +2169,11 @@ function AdminDashboardPage() {
                   {um.image && (
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-muted border-b border-border">
                       <img
-                        src={um.image}
+                        src={resolveImageUrl(um.image, um.nama)}
                         alt={um.nama}
+                        onError={(e) => {
+                          e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                        }}
                         className="size-full object-cover transition-transform group-hover:scale-105"
                       />
                     </div>
@@ -2495,8 +2505,11 @@ function AdminDashboardPage() {
                         <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
                           {item.image ? (
                             <img
-                              src={item.image}
+                              src={resolveImageUrl(item.image, item.judul)}
                               alt={item.alt || item.judul}
+                              onError={(e) => {
+                                e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                              }}
                               className="size-full object-cover transition-transform group-hover:scale-105"
                             />
                           ) : (
@@ -2815,7 +2828,7 @@ function AdminDashboardPage() {
                 {editingKegiatan.image && (
                   <div className="mt-3 relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-muted">
                     <img
-                      src={editingKegiatan.image}
+                      src={resolveImageUrl(editingKegiatan.image)}
                       alt="Preview Foto Kegiatan"
                       className="size-full object-cover"
                       onError={(e) => {
@@ -2954,7 +2967,7 @@ function AdminDashboardPage() {
                   {editingLandmark.image && (
                     <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-muted">
                       <img
-                        src={editingLandmark.image}
+                        src={resolveImageUrl(editingLandmark.image)}
                         alt="Preview"
                         className="size-full object-cover"
                       />
@@ -3096,7 +3109,7 @@ function AdminDashboardPage() {
                   {editingUmkm.image && (
                     <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-muted">
                       <img
-                        src={editingUmkm.image}
+                        src={resolveImageUrl(editingUmkm.image)}
                         alt="Preview"
                         className="size-full object-cover"
                       />
@@ -3359,7 +3372,7 @@ function AdminDashboardPage() {
                   {editingGaleri.image && (
                     <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-border bg-muted">
                       <img
-                        src={editingGaleri.image}
+                        src={resolveImageUrl(editingGaleri.image)}
                         alt="Pratinjau Foto"
                         className="size-full object-cover"
                       />

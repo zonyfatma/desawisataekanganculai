@@ -34,6 +34,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { formatRupiah, getVillage, klasifikasiInfo, villages, type Village } from "@/data/jadesta";
 import { useSiteData } from "@/lib/cms-store";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import { SourceLink } from "@/components/site/SourceLink";
 import { toast } from "sonner";
 import { JsonLdScript, getDestinationJsonLd, getBreadcrumbJsonLd } from "@/lib/json-ld";
@@ -154,13 +155,16 @@ function DesaDetail() {
       {/* Hero gallery */}
       <section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
         <img
-          src={village.galeri[slide] ?? village.image}
+          src={resolveImageUrl(village.galeri[slide] ?? village.image, village.nama)}
           alt={`Galeri ${village.nama}`}
           width={1600}
           height={1000}
           loading="eager"
           fetchPriority="high"
           decoding="sync"
+          onError={(e) => {
+            e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+          }}
           className="size-full object-cover"
         />
         <div className="hero-overlay absolute inset-0" />
@@ -680,8 +684,11 @@ function DesaDetail() {
                     <div>
                       {u.image && (
                         <img
-                          src={u.image}
+                          src={resolveImageUrl(u.image, u.nama)}
                           alt={u.nama}
+                          onError={(e) => {
+                            e.currentTarget.src = getImageFallback(u.nama, u.kategori);
+                          }}
                           className="aspect-video w-full rounded-2xl object-cover"
                         />
                       )}
@@ -743,8 +750,11 @@ function DesaDetail() {
                   <div>
                     <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-muted">
                       <img
-                        src={p.image}
+                        src={resolveImageUrl(p.image, p.nama)}
                         alt={p.nama}
+                        onError={(e) => {
+                          e.currentTarget.src = getImageFallback(p.nama, p.kategori);
+                        }}
                         className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <span className="absolute top-2.5 right-2.5 rounded-full bg-black/60 backdrop-blur px-3 py-1 text-[10px] font-black text-white uppercase">
@@ -785,12 +795,15 @@ function DesaDetail() {
               {village.galeri.map((img, i) => (
                 <button
                   key={i}
-                  onClick={() => setLightbox(img)}
+                  onClick={() => setLightbox(resolveImageUrl(img, `Galeri ${i + 1}`))}
                   className="group relative aspect-square overflow-hidden rounded-2xl border border-border"
                 >
                   <img
-                    src={img}
+                    src={resolveImageUrl(img, `Galeri ${i + 1}`)}
                     alt={`Galeri ${i + 1}`}
+                    onError={(e) => {
+                      e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                    }}
                     className="size-full object-cover transition-transform group-hover:scale-105"
                   />
                   <span className="absolute inset-0 grid place-items-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity text-white">
@@ -817,8 +830,11 @@ function DesaDetail() {
         <Dialog open={!!lightbox} onOpenChange={() => setLightbox(null)}>
           <DialogContent className="max-w-4xl p-0 overflow-hidden bg-black border-0">
             <img
-              src={lightbox}
+              src={resolveImageUrl(lightbox)}
               alt="Enlarged"
+              onError={(e) => {
+                e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+              }}
               className="w-full h-auto max-h-[85vh] object-contain"
             />
           </DialogContent>

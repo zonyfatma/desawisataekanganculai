@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MapPin, ChevronRight, ShoppingBag, MessageCircle } from "lucide-react";
 import { getVillage, WHATSAPP_NUMBER } from "@/data/jadesta";
 import { useSiteData } from "@/lib/cms-store";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import { SourceLink } from "./SourceLink";
 import { SectionHeading } from "./Primitives";
 
@@ -68,12 +69,15 @@ export function CultureAndMarketplace() {
               <div>
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
-                    src={item.image}
+                    src={resolveImageUrl(item.image, item.nama)}
                     alt={item.nama}
                     width={800}
                     height={600}
                     loading="lazy"
                     decoding="async"
+                    onError={(e) => {
+                      e.currentTarget.src = getImageFallback(item.nama, item.kategori);
+                    }}
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-108"
                   />
                   <div className="hero-overlay absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />

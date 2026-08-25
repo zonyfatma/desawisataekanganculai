@@ -34,9 +34,7 @@ data/*.db-wal
 data/*.sqlite
 data/*.sqlite3
 
-# Uploads & Media Assets Storage
-public/uploads/
-uploads/
+# Uploads & Media Assets Storage (tracked for initial static assets)
 
 # Editor directories and temporary files
 .vscode/*

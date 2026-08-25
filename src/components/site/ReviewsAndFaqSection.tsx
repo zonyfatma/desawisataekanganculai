@@ -144,8 +144,11 @@ export function ReviewsAndFaqSection() {
 
                 <div className="mt-6 flex items-center gap-3 border-t border-border pt-4">
                   <img
-                    src={rev.avatar}
+                    src={rev.avatar || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"}
                     alt={rev.nama}
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80";
+                    }}
                     className="size-10 rounded-full object-cover ring-2 ring-primary/20"
                   />
                   <div>

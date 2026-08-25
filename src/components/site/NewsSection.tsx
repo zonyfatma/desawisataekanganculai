@@ -1,6 +1,7 @@
 import { ArrowUpRight, CalendarDays } from "lucide-react";
 import { WHATSAPP_NUMBER } from "@/data/jadesta";
 import { useSiteData } from "@/lib/cms-store";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import { Reveal, SectionHeading } from "./Primitives";
 import { SourceLink, isSpecificArticleUrl } from "./SourceLink";
 
@@ -49,13 +50,13 @@ export function NewsSection() {
                   <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                     {featured.image ? (
                       <img
-                        src={featured.image}
+                        src={resolveImageUrl(featured.image, featured.judul)}
                         alt={featured.judul}
                         width={1600}
                         height={1000}
                         loading="lazy"
                         onError={(e) => {
-                          (e.currentTarget as HTMLImageElement).style.display = "none";
+                          e.currentTarget.src = getImageFallback(featured.judul, featured.kategori);
                         }}
                         className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
@@ -109,13 +110,13 @@ export function NewsSection() {
                 <article className="card-lift flex flex-col sm:flex-row gap-4 rounded-2xl border border-border bg-card p-4 shadow-soft">
                   {b.image ? (
                     <img
-                      src={b.image}
+                      src={resolveImageUrl(b.image, b.judul)}
                       alt={b.judul}
                       width={1600}
                       height={1000}
                       loading="lazy"
                       onError={(e) => {
-                        (e.currentTarget as HTMLImageElement).style.display = "none";
+                        e.currentTarget.src = getImageFallback(b.judul, b.kategori);
                       }}
                       className="size-24 shrink-0 rounded-xl object-cover sm:size-28 bg-muted"
                     />

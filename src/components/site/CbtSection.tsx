@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./Primitives";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import ekangAnculai from "@/assets/village-ekang-anculai.jpg";
 import ekangAgrowisata from "@/assets/ekang-agrowisata.jpg";
 import ekangMangrove from "@/assets/ekang-mangrove.jpg";
@@ -152,12 +153,15 @@ export function CbtSection() {
                     {/* Photo Container with rounded top and overflow-hidden strictly for image zoom */}
                     <div className="relative aspect-[16/11] w-full bg-muted rounded-t-2xl overflow-hidden">
                       <img
-                        src={s.image}
+                        src={resolveImageUrl(s.image, s.title)}
                         alt={s.title}
                         width={600}
                         height={400}
                         loading="lazy"
                         decoding="async"
+                        onError={(e) => {
+                          e.currentTarget.src = getImageFallback(s.title);
+                        }}
                         className="size-full object-cover transition-transform duration-500 group-hover:scale-108"
                       />
                       <span className="absolute top-2.5 left-2.5 grid size-7 place-items-center rounded-xl bg-[#064E3B] text-[11px] font-black text-white shadow-md backdrop-blur-sm">

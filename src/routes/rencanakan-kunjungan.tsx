@@ -52,6 +52,7 @@ import {
 } from "@/data/jadesta";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { useSiteData } from "@/lib/cms-store";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import { JsonLdScript, getBreadcrumbJsonLd } from "@/lib/json-ld";
 
 export const Route = createFileRoute("/rencanakan-kunjungan")({
@@ -424,8 +425,11 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
               <div className="relative overflow-hidden rounded-3xl border border-border shadow-2xl group">
                 <div className="aspect-[4/3] w-full overflow-hidden bg-muted">
                   <img
-                    src={fullDay.galeri[0]?.image || galeriCategories[0]?.image}
+                    src={resolveImageUrl(fullDay.galeri[0]?.image || galeriCategories[0]?.image)}
                     alt="Paket & Pengalaman Wisata Ekang Anculai"
+                    onError={(e) => {
+                      e.currentTarget.src = "/assets/village-ekang-anculai.jpg";
+                    }}
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
@@ -1297,8 +1301,11 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
               >
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
                   <img
-                    src={g.image}
+                    src={resolveImageUrl(g.image, g.kategori)}
                     alt={g.caption}
+                    onError={(e) => {
+                      e.currentTarget.src = getImageFallback(g.kategori);
+                    }}
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <span className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full bg-background/90 px-3 py-1 text-[11px] font-extrabold text-foreground backdrop-blur shadow-sm">

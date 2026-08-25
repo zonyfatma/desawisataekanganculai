@@ -15,6 +15,7 @@ import {
   Compass,
 } from "lucide-react";
 import { paketList, type Paket, WHATSAPP_NUMBER } from "@/data/jadesta";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { SourceLink } from "./SourceLink";
 import { SectionHeading } from "./Primitives";
@@ -83,11 +84,14 @@ export function PackagesSection() {
               <div className="flex flex-col flex-1">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
-                    src={p.image}
+                    src={resolveImageUrl(p.image, p.nama)}
                     alt={p.nama}
                     width={1600}
                     height={1000}
                     loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.src = getImageFallback(p.nama, p.kategori);
+                    }}
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-108"
                   />
                   <div className="hero-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-50 transition-opacity" />
@@ -182,8 +186,11 @@ export function PackagesSection() {
             {/* Header Image & Top Controls Overlay */}
             <div className="relative shrink-0 aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden">
               <img
-                src={activeModalPaket.image}
+                src={resolveImageUrl(activeModalPaket.image, activeModalPaket.nama)}
                 alt={activeModalPaket.nama}
+                onError={(e) => {
+                  e.currentTarget.src = getImageFallback(activeModalPaket.nama, activeModalPaket.kategori);
+                }}
                 className="size-full object-cover"
               />
               <div className="hero-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/30" />

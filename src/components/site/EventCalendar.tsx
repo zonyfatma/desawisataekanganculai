@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { berita, getVillage, type KegiatanItem, type BeritaItem } from "@/data/jadesta";
 import { useSiteData } from "@/lib/cms-store";
+import { resolveImageUrl } from "@/lib/image-resolver";
 import { SourceLink, isSpecificArticleUrl } from "./SourceLink";
 import { SectionHeading } from "./Primitives";
 
@@ -83,12 +84,14 @@ function CardThumbnail({
     );
   };
 
+  const resolvedSrc = resolveImageUrl(image, title);
+
   const innerContent = (
     <>
       {showImage ? (
         <>
           <img
-            src={image}
+            src={resolvedSrc}
             alt={title}
             onError={() => setHasError(true)}
             className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -98,7 +101,7 @@ function CardThumbnail({
 
           {/* Image source/type badge */}
           <span className="absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full bg-black/70 px-2.5 py-0.5 text-[9px] font-bold text-white backdrop-blur shadow-sm">
-            {image?.startsWith("http") ? "🌐 Foto Publikasi" : "📷 Dokumentasi Asli"}
+            {resolvedSrc?.startsWith("http") ? "🌐 Foto Publikasi" : "📷 Dokumentasi Asli"}
           </span>
         </>
       ) : (

@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Camera, Filter, ExternalLink } from "lucide-react";
 import { galeriDataset, type GaleriFotoItem } from "@/data/jadesta";
 import { useSiteData } from "@/lib/cms-store";
+import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { JsonLdScript, getBreadcrumbJsonLd } from "@/lib/json-ld";
 
@@ -124,12 +125,15 @@ function GaleriPage() {
             >
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <img
-                  src={item.image}
+                  src={resolveImageUrl(item.image, item.judul)}
                   alt={item.alt}
                   width={800}
                   height={600}
                   loading="lazy"
                   decoding="async"
+                  onError={(e) => {
+                    e.currentTarget.src = getImageFallback(item.judul, item.kategori);
+                  }}
                   className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <span className="absolute top-3 left-3 rounded-full bg-background/90 px-3 py-1 text-[11px] font-bold text-foreground backdrop-blur">
@@ -173,8 +177,11 @@ function GaleriPage() {
           <DialogContent className="max-w-4xl p-0 overflow-hidden bg-black border-0 rounded-3xl">
             <div className="relative">
               <img
-                src={lightbox.image}
+                src={resolveImageUrl(lightbox.image, lightbox.judul)}
                 alt={lightbox.alt}
+                onError={(e) => {
+                  e.currentTarget.src = getImageFallback(lightbox.judul, lightbox.kategori);
+                }}
                 className="w-full h-auto max-h-[80vh] object-contain"
               />
               <div className="bg-card p-6 border-t border-border">
