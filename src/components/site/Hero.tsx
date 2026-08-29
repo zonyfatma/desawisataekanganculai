@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -14,14 +14,17 @@ import {
   Utensils,
   Drama,
 } from "lucide-react";
-import { TripPlannerModal } from "./TripPlannerModal";
-import ekangAnculai from "@/assets/village-ekang-anculai.jpg";
-import ekangMangrove from "@/assets/ekang-mangrove.jpg";
-import ekangBatik from "@/assets/ekang-batik.png";
-import ekangAgrowisata from "@/assets/ekang-agrowisata.jpg";
-import ekangKuliner from "@/assets/ekang-kuliner.png";
-import ekangReog from "@/assets/ekang-reog.jpg";
-import tekoKayangan from "@/assets/teko-kayangan.jpg";
+import ekangAnculai from "@/assets/village-ekang-anculai.webp";
+import ekangMangrove from "@/assets/ekang-mangrove.webp";
+import ekangBatik from "@/assets/ekang-batik.webp";
+import ekangAgrowisata from "@/assets/ekang-agrowisata.webp";
+import ekangKuliner from "@/assets/ekang-kuliner.webp";
+import ekangReog from "@/assets/ekang-reog.webp";
+import tekoKayangan from "@/assets/teko-kayangan.webp";
+
+const TripPlannerModal = lazy(() =>
+  import("./TripPlannerModal").then((m) => ({ default: m.TripPlannerModal })),
+);
 
 const slides = [
   {
@@ -247,8 +250,12 @@ export function Hero() {
         </div>
       </section>
 
-      {/* Trip Planner Modal */}
-      <TripPlannerModal open={openPlanner} onOpenChange={setOpenPlanner} />
+      {/* Trip Planner Modal (Lazy-loaded on demand) */}
+      {openPlanner && (
+        <Suspense fallback={null}>
+          <TripPlannerModal open={openPlanner} onOpenChange={setOpenPlanner} />
+        </Suspense>
+      )}
     </>
   );
 }

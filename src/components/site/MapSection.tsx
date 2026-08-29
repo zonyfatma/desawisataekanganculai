@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState, useRef } from "react";
 import {
   Navigation,
   Ship,
@@ -42,14 +42,40 @@ function MapSkeleton() {
 }
 
 export function MapSection() {
-  const [mounted, setMounted] = useState(false);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [shouldLoadMap, setShouldLoadMap] = useState(false);
   const [activeTab, setActiveTab] = useState<"leaflet" | "google">("leaflet");
   const [copied, setCopied] = useState(false);
 
   const siteData = useSiteData();
 
   useEffect(() => {
-    setMounted(true);
+    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
+      setShouldLoadMap(true);
+      return;
+    }
+
+    const target = sectionRef.current;
+    if (!target) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry && entry.isIntersecting) {
+          setShouldLoadMap(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: "300px 0px",
+      },
+    );
+
+    observer.observe(target);
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   const village = villages[0];
@@ -131,6 +157,7 @@ export function MapSection() {
   return (
     <section
       id="peta"
+      ref={sectionRef}
       className="w-full scroll-mt-24 bg-[#064E3B] text-white py-16 sm:py-24 border-y border-emerald-900/60 shadow-2xl relative overflow-hidden"
     >
       {/* Background glow effects */}
@@ -234,7 +261,7 @@ export function MapSection() {
           {/* Main Full-Width Map Container */}
           <div className="relative min-h-[360px] lg:min-h-[520px] h-[380px] sm:h-[460px] lg:h-[560px] w-full bg-[#f3f4f6]">
             {activeTab === "leaflet" ? (
-              mounted && village ? (
+              shouldLoadMap && village ? (
                 <Suspense fallback={<MapSkeleton />}>
                   <MapCanvas items={[village]} landmarks={landmarks} />
                 </Suspense>

@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { WHATSAPP_NUMBER } from "@/data/jadesta";
 import { toast } from "sonner";
-import logoBintan from "@/assets/logo-bintan.png";
+import logoBintan from "@/assets/logo-bintan.webp";
 
 const kolomNavigasi = [
   { label: "Profil Wisata Ekang Anculai", href: "/" },

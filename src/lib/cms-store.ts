@@ -158,9 +158,6 @@ export function useSiteData(): SiteDataState {
   const [data, setData] = useState<SiteDataState>(cmsStore.getSnapshot());
 
   useEffect(() => {
-    // Record page view on client mount
-    cmsStore.recordVisit();
-
     // Fetch live data from server (Supabase or SQLite)
     getSiteDataServerFn()
       .then((serverData) => {

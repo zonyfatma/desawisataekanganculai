@@ -1,14 +1,14 @@
-import ekangMangroveDermaga from "@/assets/ekang-mangrove-dermaga.jpg";
-import reogKendangKempul from "@/assets/reog-kendang-kempul.jpg";
-import rengginangSajian from "@/assets/rengginang-sajian.jpg";
-import rengginangKemasan3 from "@/assets/rengginang-kemasan-3.jpg";
-import rengginangKemasanLabel from "@/assets/rengginang-kemasan-label.jpg";
-import rengginangKemasanMentah from "@/assets/rengginang-kemasan-mentah.jpg";
-import kegiatanBatik1 from "@/assets/kegiatan-batik-1.jpg";
-import kegiatanBatik2 from "@/assets/kegiatan-batik-2.jpg";
-import kegiatanBatik3 from "@/assets/kegiatan-batik-3.jpg";
-import tekoKayangan from "@/assets/teko-kayangan.jpg";
-import ekangGotongRoyongKkn from "@/assets/ekang-gotong-royong-kkn.jpg";
+import ekangMangroveDermaga from "@/assets/ekang-mangrove-dermaga.webp";
+import reogKendangKempul from "@/assets/reog-kendang-kempul.webp";
+import rengginangSajian from "@/assets/rengginang-sajian.webp";
+import rengginangKemasan3 from "@/assets/rengginang-kemasan-3.webp";
+import rengginangKemasanLabel from "@/assets/rengginang-kemasan-label.webp";
+import rengginangKemasanMentah from "@/assets/rengginang-kemasan-mentah.webp";
+import kegiatanBatik1 from "@/assets/kegiatan-batik-1.webp";
+import kegiatanBatik2 from "@/assets/kegiatan-batik-2.webp";
+import kegiatanBatik3 from "@/assets/kegiatan-batik-3.webp";
+import tekoKayangan from "@/assets/teko-kayangan.webp";
+import ekangGotongRoyongKkn from "@/assets/ekang-gotong-royong-kkn.webp";
 
 // Pemetaan foto autentik untuk menjaga konsistensi tanpa AI-generated images
 const ekangAnculai = tekoKayangan;

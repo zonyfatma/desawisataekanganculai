@@ -67,20 +67,18 @@ function Index() {
 
   return (
     <>
-      <JsonLdScript data={villageSchema} />
-      {faqSchema && <JsonLdScript data={faqSchema} />}
-      <main id="main-content" tabIndex={-1} className="outline-none">
-        <Hero />
-        <StatsSection />
-        <DestinationSpotlight />
-        <CbtSection />
-        <VideoSection />
-        <PackagesSection />
-        <CultureAndMarketplace />
-        <MapSection />
-        <EventCalendar />
-        <ReviewsAndFaqSection />
-      </main>
+      <JsonLdScript id="village-schema" data={villageSchema} />
+      {faqSchema && <JsonLdScript id="faq-schema" data={faqSchema} />}
+      <Hero />
+      <StatsSection />
+      <DestinationSpotlight />
+      <CbtSection />
+      <VideoSection />
+      <PackagesSection />
+      <CultureAndMarketplace />
+      <MapSection />
+      <EventCalendar />
+      <ReviewsAndFaqSection />
     </>
   );
 }

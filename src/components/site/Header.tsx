@@ -5,7 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { TripPlannerModal } from "./TripPlannerModal";
 import { WHATSAPP_NUMBER } from "@/data/jadesta";
 import { cn } from "@/lib/utils";
-import logoBintan from "@/assets/logo-bintan.png";
+import logoBintan from "@/assets/logo-bintan.webp";
 
 const navItems = [
   { label: "Profil Desa", to: "/" },

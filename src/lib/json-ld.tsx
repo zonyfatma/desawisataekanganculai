@@ -9,13 +9,22 @@ const DEFAULT_SITE_URL = "https://desawisataekanganculai.id";
  */
 export function JsonLdScript({
   data,
+  id,
 }: {
   data: Record<string, unknown> | Record<string, unknown>[];
+  id?: string;
 }) {
   if (!data) return null;
   const jsonString = JSON.stringify(data).replace(/</g, "\\u003c").replace(/>/g, "\\u003e");
 
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonString }} />;
+  return (
+    <script
+      id={id}
+      type="application/ld+json"
+      suppressHydrationWarning={true}
+      dangerouslySetInnerHTML={{ __html: jsonString }}
+    />
+  );
 }
 
 /**
@@ -25,7 +34,7 @@ export function getVillageJsonLd(
   villageInfo?: VillageInfoState,
   approvedReviews: ReviewItem[] = [],
 ) {
-  const baseUrl = (process.env["SITE_URL"] || DEFAULT_SITE_URL).replace(/\/$/, "");
+  const baseUrl = DEFAULT_SITE_URL;
 
   const avgRating =
     approvedReviews.length > 0
@@ -80,7 +89,7 @@ export function getVillageJsonLd(
  * Schema.org TouristAttraction for individual destination spotlight/landmark
  */
 export function getDestinationJsonLd(landmark: LandmarkItem) {
-  const baseUrl = (process.env["SITE_URL"] || DEFAULT_SITE_URL).replace(/\/$/, "");
+  const baseUrl = DEFAULT_SITE_URL;
 
   return {
     "@context": "https://schema.org",
@@ -107,7 +116,7 @@ export function getDestinationJsonLd(landmark: LandmarkItem) {
  * Schema.org Event for village agenda & events
  */
 export function getEventJsonLd(kegiatan: KegiatanItem) {
-  const baseUrl = (process.env["SITE_URL"] || DEFAULT_SITE_URL).replace(/\/$/, "");
+  const baseUrl = DEFAULT_SITE_URL;
 
   return {
     "@context": "https://schema.org",
@@ -140,7 +149,7 @@ export function getEventJsonLd(kegiatan: KegiatanItem) {
  * Schema.org BreadcrumbList
  */
 export function getBreadcrumbJsonLd(items: { name: string; url: string }[]) {
-  const baseUrl = (process.env["SITE_URL"] || DEFAULT_SITE_URL).replace(/\/$/, "");
+  const baseUrl = DEFAULT_SITE_URL;
 
   return {
     "@context": "https://schema.org",

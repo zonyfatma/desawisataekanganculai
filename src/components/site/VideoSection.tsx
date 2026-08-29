@@ -3,7 +3,7 @@ import { Play, ExternalLink } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { YOUTUBE_OFFICIAL_URL, YOUTUBE_OFFICIAL_ID } from "@/data/jadesta";
 import { SectionHeading } from "./Primitives";
-import ekangAnculai from "@/assets/village-ekang-anculai.jpg";
+import ekangAnculai from "@/assets/village-ekang-anculai.webp";
 
 export function VideoSection() {
   const [openVideo, setOpenVideo] = useState(false);

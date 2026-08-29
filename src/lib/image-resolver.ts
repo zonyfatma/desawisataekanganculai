@@ -4,25 +4,25 @@
  */
 
 export const STATIC_ASSET_FALLBACKS: Record<string, string> = {
-  batik: "/assets/ekang-batik.png",
-  mangrove: "/assets/ekang-mangrove.jpg",
-  "mangrove-dermaga": "/assets/ekang-mangrove-dermaga.jpg",
-  dermaga: "/assets/ekang-mangrove-dermaga.jpg",
-  teko: "/assets/teko-kayangan.jpg",
-  "teko-kayangan": "/assets/teko-kayangan.jpg",
-  reog: "/assets/reog-kendang-kempul.jpg",
-  kendang: "/assets/reog-kendang-kempul.jpg",
-  perkebunan: "/assets/ekang-agrowisata.jpg",
-  agrowisata: "/assets/ekang-agrowisata.jpg",
-  kebun: "/assets/ekang-agrowisata.jpg",
-  kuliner: "/assets/ekang-kuliner.png",
-  rengginang: "/assets/rengginang-sajian.jpg",
-  "rengginang-comel": "/assets/rengginang-comel.jpg",
-  homestay: "/assets/village-ekang-anculai.jpg",
-  desa: "/assets/village-ekang-anculai.jpg",
-  "gotong-royong": "/assets/ekang-gotong-royong-kkn.jpg",
-  kkn: "/assets/ekang-gotong-royong-kkn.jpg",
-  default: "/assets/village-ekang-anculai.jpg",
+  batik: "/assets/ekang-batik.webp",
+  mangrove: "/assets/ekang-mangrove.webp",
+  "mangrove-dermaga": "/assets/ekang-mangrove-dermaga.webp",
+  dermaga: "/assets/ekang-mangrove-dermaga.webp",
+  teko: "/assets/teko-kayangan.webp",
+  "teko-kayangan": "/assets/teko-kayangan.webp",
+  reog: "/assets/reog-kendang-kempul.webp",
+  kendang: "/assets/reog-kendang-kempul.webp",
+  perkebunan: "/assets/ekang-agrowisata.webp",
+  agrowisata: "/assets/ekang-agrowisata.webp",
+  kebun: "/assets/ekang-agrowisata.webp",
+  kuliner: "/assets/ekang-kuliner.webp",
+  rengginang: "/assets/rengginang-sajian.webp",
+  "rengginang-comel": "/assets/rengginang-comel.webp",
+  homestay: "/assets/village-ekang-anculai.webp",
+  desa: "/assets/village-ekang-anculai.webp",
+  "gotong-royong": "/assets/ekang-gotong-royong-kkn.webp",
+  kkn: "/assets/ekang-gotong-royong-kkn.webp",
+  default: "/assets/village-ekang-anculai.webp",
 };
 
 /**
@@ -55,11 +55,19 @@ export function resolveImageUrl(
 
   // 3. Absolute root-relative paths: /assets/xxx, /uploads/xxx
   if (trimmed.startsWith("/")) {
-    return trimmed.split("?")[0];
+    const clean = trimmed.split("?")[0]!;
+    if (clean.startsWith("/assets/") && /\.(png|jpg|jpeg)$/i.test(clean)) {
+      return clean.replace(/\.(png|jpg|jpeg)$/i, ".webp");
+    }
+    return clean;
   }
 
   // 4. Relative filename fallback
-  return `/${trimmed.split("?")[0]}`;
+  const cleanRel = trimmed.split("?")[0]!;
+  if (/\.(png|jpg|jpeg)$/i.test(cleanRel)) {
+    return `/${cleanRel.replace(/\.(png|jpg|jpeg)$/i, ".webp")}`;
+  }
+  return `/${cleanRel}`;
 }
 
 /**

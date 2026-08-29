@@ -19,11 +19,11 @@ import { SourceLink } from "./SourceLink";
 import { useSiteData } from "@/lib/cms-store";
 import { RUMAH_BATIK_URL } from "@/data/jadesta";
 import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
-import kegiatanBatik2 from "@/assets/kegiatan-batik-2.jpg";
-import ekangMangroveDermaga from "@/assets/ekang-mangrove-dermaga.jpg";
-import tekoKayangan from "@/assets/teko-kayangan.jpg";
-import reogKendangKempul from "@/assets/reog-kendang-kempul.jpg";
-import rengginangSajian from "@/assets/rengginang-sajian.jpg";
+import kegiatanBatik2 from "@/assets/kegiatan-batik-2.webp";
+import ekangMangroveDermaga from "@/assets/ekang-mangrove-dermaga.webp";
+import tekoKayangan from "@/assets/teko-kayangan.webp";
+import reogKendangKempul from "@/assets/reog-kendang-kempul.webp";
+import rengginangSajian from "@/assets/rengginang-sajian.webp";
 
 export type AttractionDetail = {
   num: string;

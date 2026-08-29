@@ -54,7 +54,7 @@ import {
   DialogHeader,
   DialogFooter,
 } from "@/components/ui/dialog";
-import logoBintan from "@/assets/logo-bintan.png";
+import logoBintan from "@/assets/logo-bintan.webp";
 import { resolveImageUrl } from "@/lib/image-resolver";
 
 import {
