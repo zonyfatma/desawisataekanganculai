@@ -12,12 +12,12 @@ import {
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./Primitives";
 import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
-import ekangAnculai from "@/assets/village-ekang-anculai.jpg";
-import ekangAgrowisata from "@/assets/ekang-agrowisata.jpg";
-import ekangMangrove from "@/assets/ekang-mangrove.jpg";
-import ekangBatik from "@/assets/ekang-batik.png";
-import ekangReog from "@/assets/ekang-reog.jpg";
-import kegiatanBatik3 from "@/assets/kegiatan-batik-3.jpg";
+import ekangAnculai from "@/assets/village-ekang-anculai.webp";
+import ekangAgrowisata from "@/assets/ekang-agrowisata.webp";
+import ekangMangrove from "@/assets/ekang-mangrove.webp";
+import ekangBatik from "@/assets/ekang-batik.webp";
+import ekangReog from "@/assets/ekang-reog.webp";
+import kegiatanBatik3 from "@/assets/kegiatan-batik-3.webp";
 
 const cbtPrinciples = [
   {

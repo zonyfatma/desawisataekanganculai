@@ -48,9 +48,9 @@ export function resolveImageUrl(
     return trimmed;
   }
 
-  // 2. Vite dev path normalization: /src/assets/xxx -> /assets/xxx
-  if (trimmed.startsWith("/src/assets/")) {
-    return trimmed.replace(/^\/src\/assets\//, "/assets/").split("?")[0];
+  // 2. Vite dev & virtual paths: keep as-is so Vite can serve them
+  if (trimmed.startsWith("/src/assets/") || trimmed.startsWith("/@fs/") || trimmed.startsWith("/@id/")) {
+    return trimmed;
   }
 
   // 3. Absolute root-relative paths: /assets/xxx, /uploads/xxx

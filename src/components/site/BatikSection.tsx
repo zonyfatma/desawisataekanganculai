@@ -3,10 +3,10 @@ import { Link } from "@tanstack/react-router";
 import { RUMAH_BATIK_URL } from "@/data/jadesta";
 import { resolveImageUrl, getImageFallback } from "@/lib/image-resolver";
 import { SectionHeading } from "./Primitives";
-import ekangBatik from "@/assets/ekang-batik.png";
-import kegiatanBatik1 from "@/assets/kegiatan-batik-1.jpg";
-import kegiatanBatik2 from "@/assets/kegiatan-batik-2.jpg";
-import kegiatanBatik3 from "@/assets/kegiatan-batik-3.jpg";
+import ekangBatik from "@/assets/ekang-batik.webp";
+import kegiatanBatik1 from "@/assets/kegiatan-batik-1.webp";
+import kegiatanBatik2 from "@/assets/kegiatan-batik-2.webp";
+import kegiatanBatik3 from "@/assets/kegiatan-batik-3.webp";
 
 export function BatikSection() {
   const batikActivities = [
