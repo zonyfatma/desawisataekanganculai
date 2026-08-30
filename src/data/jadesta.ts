@@ -321,7 +321,7 @@ export const klasifikasiInfo: Record<
 export const provinsiList = ["Kepulauan Riau"];
 
 export const WHATSAPP_NUMBER = "6285668776209";
-export const RUMAH_BATIK_URL = "https://www.bintankab.go.id/";
+export const RUMAH_BATIK_URL = "https://rumahbatikbintan.com/";
 export const YOUTUBE_OFFICIAL_ID = "XnT6XnlvEoA";
 export const YOUTUBE_OFFICIAL_URL = `https://www.youtube.com/watch?v=${YOUTUBE_OFFICIAL_ID}`;
 
@@ -344,8 +344,8 @@ export const galeriDataset: GaleriFotoItem[] = [
     image: ekangBatik,
     caption: "Galeri edukasi dan produksi kain batik khas Bintan hasil karya perajin lokal desa.",
     alt: "Pusat Edukasi Rumah Batik Bintan Ekang Anculai",
-    sumber: "Pemerintah Kabupaten Bintan",
-    sumberUrl: "https://www.bintankab.go.id/",
+    sumber: "Rumah Batik Bintan",
+    sumberUrl: "https://rumahbatikbintan.com/",
   },
   {
     id: "gal-3",

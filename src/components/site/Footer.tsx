@@ -26,7 +26,7 @@ const kolomNavigasi = [
 ];
 
 const kolomPotensi = [
-  { label: "Rumah Batik Bintan", href: "/#umkm-budaya" },
+  { label: "Rumah Batik Bintan", href: "https://rumahbatikbintan.com/" },
   { label: "Ekang Mangrove Park", href: "/#potensi" },
   { label: "Wisata Perkebunan Warga", href: "/#potensi" },
   { label: "Homestay Rumah Warga", href: "/rencanakan-kunjungan" },
