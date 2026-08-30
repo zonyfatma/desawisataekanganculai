@@ -70,7 +70,7 @@ export function ReviewsAndFaqSection() {
       if (res?.success) {
         toast.success(
           res.message ||
-            "Terima kasih! Ulasan Anda telah berhasil dikirim dan menunggu moderasi tim pengelola.",
+          "Terima kasih! Ulasan Anda telah berhasil dikirim dan menunggu moderasi tim pengelola.",
         );
         setOpenModal(false);
         setNama("");
@@ -285,11 +285,10 @@ export function ReviewsAndFaqSection() {
                     className="p-1 hover:scale-110 transition-transform"
                   >
                     <Star
-                      className={`size-6 ${
-                        star <= rating
+                      className={`size-6 ${star <= rating
                           ? "fill-amber-400 text-amber-400"
                           : "text-muted-foreground/30"
-                      }`}
+                        }`}
                     />
                   </button>
                 ))}

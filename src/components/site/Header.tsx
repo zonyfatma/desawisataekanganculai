@@ -128,7 +128,7 @@ export function Header() {
                 className="flex items-center gap-1 font-extrabold text-[#C58A32] hover:underline focus:outline-none focus:ring-1 focus:ring-[#C58A32] rounded-sm"
               >
                 <PhoneCall className="size-3" />
-                <span>Hotline Pengelola: +62 831-6634-1280</span>
+                <span>Hotline Pengelola: +62 856-6877-6209</span>
               </a>
             </div>
           </div>

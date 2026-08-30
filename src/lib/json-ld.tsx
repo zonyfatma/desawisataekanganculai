@@ -39,8 +39,8 @@ export function getVillageJsonLd(
   const avgRating =
     approvedReviews.length > 0
       ? (
-          approvedReviews.reduce((sum, r) => sum + (r.rating || 5), 0) / approvedReviews.length
-        ).toFixed(1)
+        approvedReviews.reduce((sum, r) => sum + (r.rating || 5), 0) / approvedReviews.length
+      ).toFixed(1)
       : null;
 
   const schema: Record<string, unknown> = {
@@ -52,7 +52,7 @@ export function getVillageJsonLd(
       villageInfo?.tagline ||
       "Desa Wisata Hijau dan Kreatif Bintan. Destinasi ekowisata berbasis masyarakat di Kecamatan Teluk Sebong, Kabupaten Bintan, Kepulauan Riau.",
     url: baseUrl,
-    telephone: villageInfo?.whatsapp || "+6281268326284",
+    telephone: villageInfo?.whatsapp || "+6285668776209",
     email: villageInfo?.email || "reservation@desawisataekanganculai.id",
     address: {
       "@type": "PostalAddress",

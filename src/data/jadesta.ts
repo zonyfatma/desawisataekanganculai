@@ -49,12 +49,12 @@ export type Paket = {
   highlight: string;
   deskripsiLengkap: string;
   kategori:
-    | "Ekowisata & Mangrove"
-    | "Batik & Ekonomi Kreatif"
-    | "Wisata Perkebunan"
-    | "Wisata Budaya"
-    | "Gastronomi & Kuliner"
-    | "Homestay Rumah Warga";
+  | "Ekowisata & Mangrove"
+  | "Batik & Ekonomi Kreatif"
+  | "Wisata Perkebunan"
+  | "Wisata Budaya"
+  | "Gastronomi & Kuliner"
+  | "Homestay Rumah Warga";
   fasilitas?: string[];
   itinerary?: ItineraryItem[];
   itineraryHari1?: ItineraryItem[];
@@ -108,15 +108,15 @@ export type GaleriFotoItem = {
   id: string;
   judul: string;
   kategori:
-    | "Alam"
-    | "Mangrove"
-    | "Perkebunan"
-    | "Budaya"
-    | "Gastronomi"
-    | "Batik"
-    | "Aktivitas Masyarakat"
-    | "Homestay"
-    | "Kegiatan Desa";
+  | "Alam"
+  | "Mangrove"
+  | "Perkebunan"
+  | "Budaya"
+  | "Gastronomi"
+  | "Batik"
+  | "Aktivitas Masyarakat"
+  | "Homestay"
+  | "Kegiatan Desa";
   image: string;
   caption: string;
   alt: string;
@@ -153,7 +153,7 @@ export type TouristReview = {
   tanggal: string;
   komentar: string;
   tipeWisatawan:
-    "Keluarga" | "Pasangan" | "Mancanegara" | "Rombongan / KKN" | "Solo Traveler" | string;
+  "Keluarga" | "Pasangan" | "Mancanegara" | "Rombongan / KKN" | "Solo Traveler" | string;
   avatar: string;
   status?: "pending" | "approved" | "rejected";
 };
@@ -177,7 +177,7 @@ export type TravelFaq = {
   pertanyaan: string;
   jawaban: string;
   kategori:
-    "Transportasi" | "Akomodasi & Fasilitas" | "Sistem Pembayaran" | "Etika & Keamanan" | string;
+  "Transportasi" | "Akomodasi & Fasilitas" | "Sistem Pembayaran" | "Etika & Keamanan" | string;
 };
 
 export type CbtExperienceItem = {
@@ -320,7 +320,7 @@ export const klasifikasiInfo: Record<
 
 export const provinsiList = ["Kepulauan Riau"];
 
-export const WHATSAPP_NUMBER = "6283166341280";
+export const WHATSAPP_NUMBER = "6285668776209";
 export const RUMAH_BATIK_URL = "https://www.bintankab.go.id/";
 export const YOUTUBE_OFFICIAL_ID = "XnT6XnlvEoA";
 export const YOUTUBE_OFFICIAL_URL = `https://www.youtube.com/watch?v=${YOUTUBE_OFFICIAL_ID}`;
@@ -1784,10 +1784,10 @@ export const fasilitasMaster = [
 export const formatRupiah = (n: number) =>
   n > 0
     ? new Intl.NumberFormat("id-ID", {
-        style: "currency",
-        currency: "IDR",
-        maximumFractionDigits: 0,
-      }).format(n)
+      style: "currency",
+      currency: "IDR",
+      maximumFractionDigits: 0,
+    }).format(n)
     : "Hubungi Pengelola";
 
 export const getVillage = (slug: string) => villages.find((v) => v.slug === slug);

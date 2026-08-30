@@ -473,11 +473,10 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
               <button
                 type="button"
                 onClick={() => setSelectedPackageTab("fullday")}
-                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-extrabold transition-all cursor-pointer ${
-                  selectedPackageTab === "fullday"
-                    ? "bg-primary text-primary-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-extrabold transition-all cursor-pointer ${selectedPackageTab === "fullday"
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 <Sun className="size-4" />
                 <span>Paket 1: Full Day (1 Hari)</span>
@@ -486,11 +485,10 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
               <button
                 type="button"
                 onClick={() => setSelectedPackageTab("twoday")}
-                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-extrabold transition-all cursor-pointer ${
-                  selectedPackageTab === "twoday"
-                    ? "bg-gold text-gold-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-extrabold transition-all cursor-pointer ${selectedPackageTab === "twoday"
+                  ? "bg-gold text-gold-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 <Moon className="size-4" />
                 <span>Paket 2: 2 Hari 1 Malam (2D1N)</span>
@@ -499,11 +497,10 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
               <button
                 type="button"
                 onClick={() => setSelectedPackageTab("custom")}
-                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-extrabold transition-all cursor-pointer ${
-                  selectedPackageTab === "custom"
-                    ? "bg-emerald-600 text-white shadow-sm ring-2 ring-emerald-400"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-extrabold transition-all cursor-pointer ${selectedPackageTab === "custom"
+                  ? "bg-emerald-600 text-white shadow-sm ring-2 ring-emerald-400"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 <Wand2 className="size-4 text-amber-300" />
                 <span>Paket 3: Rancang Kustom ✨</span>
@@ -749,22 +746,20 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
                     <button
                       type="button"
                       onClick={() => setSelectedDay2Tab(1)}
-                      className={`rounded-full px-4 py-1.5 text-xs font-extrabold transition-all cursor-pointer ${
-                        selectedDay2Tab === 1
-                          ? "bg-gold text-gold-foreground shadow-sm"
-                          : "bg-surface border border-border text-muted-foreground hover:text-foreground"
-                      }`}
+                      className={`rounded-full px-4 py-1.5 text-xs font-extrabold transition-all cursor-pointer ${selectedDay2Tab === 1
+                        ? "bg-gold text-gold-foreground shadow-sm"
+                        : "bg-surface border border-border text-muted-foreground hover:text-foreground"
+                        }`}
                     >
                       Hari ke-1 (Kedatangan & Budaya)
                     </button>
                     <button
                       type="button"
                       onClick={() => setSelectedDay2Tab(2)}
-                      className={`rounded-full px-4 py-1.5 text-xs font-extrabold transition-all cursor-pointer ${
-                        selectedDay2Tab === 2
-                          ? "bg-primary text-primary-foreground shadow-sm"
-                          : "bg-surface border border-border text-muted-foreground hover:text-foreground"
-                      }`}
+                      className={`rounded-full px-4 py-1.5 text-xs font-extrabold transition-all cursor-pointer ${selectedDay2Tab === 2
+                        ? "bg-primary text-primary-foreground shadow-sm"
+                        : "bg-surface border border-border text-muted-foreground hover:text-foreground"
+                        }`}
                     >
                       Hari ke-2 (Mangrove & Belanja)
                     </button>
@@ -967,11 +962,10 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
                           key={dur}
                           type="button"
                           onClick={() => setCustomDuration(dur)}
-                          className={`rounded-2xl p-3 text-center border text-xs font-bold transition-all cursor-pointer ${
-                            customDuration.startsWith(dur.slice(0, 8))
-                              ? "bg-primary text-primary-foreground border-primary shadow-sm"
-                              : "bg-surface border-border text-foreground hover:border-primary/40"
-                          }`}
+                          className={`rounded-2xl p-3 text-center border text-xs font-bold transition-all cursor-pointer ${customDuration.startsWith(dur.slice(0, 8))
+                            ? "bg-primary text-primary-foreground border-primary shadow-sm"
+                            : "bg-surface border-border text-foreground hover:border-primary/40"
+                            }`}
                         >
                           {dur}
                         </button>
@@ -1045,11 +1039,10 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
                           <div
                             key={m.id}
                             onClick={() => toggleModule(m.id)}
-                            className={`card-lift rounded-2xl border p-4 cursor-pointer transition-all flex flex-col justify-between ${
-                              isSelected
-                                ? "border-emerald-500 bg-emerald-500/10 dark:bg-emerald-950/20 shadow-soft ring-1 ring-emerald-500"
-                                : "border-border bg-surface hover:border-primary/40 opacity-80 hover:opacity-100"
-                            }`}
+                            className={`card-lift rounded-2xl border p-4 cursor-pointer transition-all flex flex-col justify-between ${isSelected
+                              ? "border-emerald-500 bg-emerald-500/10 dark:bg-emerald-950/20 shadow-soft ring-1 ring-emerald-500"
+                              : "border-border bg-surface hover:border-primary/40 opacity-80 hover:opacity-100"
+                              }`}
                           >
                             <div>
                               <div className="flex items-center justify-between gap-2">
@@ -1058,11 +1051,10 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
                                   <span>{m.kategori}</span>
                                 </span>
                                 <span
-                                  className={`grid size-5 place-items-center rounded-full text-xs font-black transition-all ${
-                                    isSelected
-                                      ? "bg-emerald-600 text-white"
-                                      : "bg-card border border-border text-transparent"
-                                  }`}
+                                  className={`grid size-5 place-items-center rounded-full text-xs font-black transition-all ${isSelected
+                                    ? "bg-emerald-600 text-white"
+                                    : "bg-card border border-border text-transparent"
+                                    }`}
                                 >
                                   ✓
                                 </span>
@@ -1102,18 +1094,16 @@ Mohon informasi perkiraan anggaran biaya, rekomendasi jadwal terbaik, dan pandua
                           <div
                             key={f.id}
                             onClick={() => toggleFacility(f.id)}
-                            className={`rounded-xl border p-3 cursor-pointer transition-all flex items-start gap-2.5 ${
-                              isSelected
-                                ? "border-gold bg-gold/10 text-foreground ring-1 ring-gold/40"
-                                : "border-border bg-surface text-muted-foreground hover:text-foreground"
-                            }`}
+                            className={`rounded-xl border p-3 cursor-pointer transition-all flex items-start gap-2.5 ${isSelected
+                              ? "border-gold bg-gold/10 text-foreground ring-1 ring-gold/40"
+                              : "border-border bg-surface text-muted-foreground hover:text-foreground"
+                              }`}
                           >
                             <span
-                              className={`grid size-4 shrink-0 place-items-center rounded mt-0.5 text-[10px] font-black ${
-                                isSelected
-                                  ? "bg-gold text-gold-foreground"
-                                  : "bg-card border border-border text-transparent"
-                              }`}
+                              className={`grid size-4 shrink-0 place-items-center rounded mt-0.5 text-[10px] font-black ${isSelected
+                                ? "bg-gold text-gold-foreground"
+                                : "bg-card border border-border text-transparent"
+                                }`}
                             >
                               ✓
                             </span>
